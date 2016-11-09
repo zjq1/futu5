@@ -1,0 +1,26 @@
+/*nav*/
+.zwd_header{width: 100%;height: 70px;background: #041f3a;position: fixed;z-index: 999;}
+.zwd_h_auto{width: 1000px;height: 70px;margin: 0 auto;background: #041f3a;}
+.zwd_logo{float: left;height: 70px;}
+.zwd_logo img{height: 70px;}
+.zwd_nav{float: right;height: 70px;}
+.zwd_nav_item{float: left;width: 76px;transition: all 0.25s linear;}
+.zwd_nav_item a{display: block;line-height: 70px;color:#75abda;text-align: center;font-size: 16px;}
+.zwd_nav_item a:hover{color: #FFFFFF;text-decoration: none;}
+.zwd_active a{color: #FFFFFF;}
+.zwd_nav_item_user{margin-left: 20px;border-left: 1px solid #284763;}
+.zwd_nav_item_spec{width: 143px;border-left: 1px solid #284763;}
+.zwd_nav_item_spec a{color: #FFFFFF;}
+.zwd_nav_item_setup{background: #0554bc;}
+.zwd_nav_item_spec:hover{background: #0b3055;}
+.zwd_nav_item_setup:hover{background: #1d76eb;}
+.zwd_icon{background:url(../images/icon.png) no-repeat;display: inline-block;}
+.zwd_icon_user{width: 30px;height: 30px;margin-right: 8px;background-position:-52px -7px;vertical-align: middle;}
+.zwd_btn_menu{display: none;}
+/*首页div*/
+.zhuyediv{float:left;margin-top: 70px;}
+/*banner*/
+.zwd_banner{position: relative;top: 70px;}
+.zwd_content{width: 100%;height: 600px;overflow: hidden;background: #FFFFFF;}
+.zwd_banner_item{width: 100%;height: 100%;background: red;position: absolute;left: 0px;top: 0px;}
+.zwd_banner_inner{font-size: 26px;width: 100%;height: 100%;color: #FFFFFF;background-repeat: no-repeat;background-position: center;background-size: cover;}

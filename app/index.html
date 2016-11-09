@@ -2,10 +2,11 @@
 <html>
 
 	<head>
-		<meta charset="utf-8">
-		<title></title>
-		<meta name="description" content="">
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+		<title>富途证券：港股美股，我选富途！0佣金，送行情！</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 		<!-- build:css(.) styles/vendor.css -->
 		<!-- bower:css -->
@@ -15,6 +16,8 @@
 		<!-- build:css(.tmp) styles/main.css -->
 		<link rel="stylesheet" href="styles/main.css">
 	  	<link rel="stylesheet" href="styles/reset.css">
+		<link rel="stylesheet" media="only screen and (min-width:641px)" href="styles/pc_index.css">
+		<link rel="stylesheet" media="only screen and (max-width:640px)" href="styles/mobile.css"> 
 		<!-- endbuild -->
 	</head>
 
@@ -24,20 +27,36 @@
     <![endif]-->
 
 		<!-- Add your site or application content here -->
-		<div id="head">
-	    	<div class="head">
-	    		<img src="../images/logo.png" />
-	    		<span>
-	    			<a ui-sref='index' ui-sref-active="hover">首页</a>
-	    			<a href="https://www.futunn.com/download" ui-sref-active="hover">下载</a>
-	    			<a ui-sref='help' ui-sref-active="hover">帮助</a>
-	    			<a ui-sref='about' ui-sref-active="hover">关于</a>
-	    			<a class="setup"><i class="icon icon-user"></i>我的富途</a>
-	    			<a class="setup" style="border-right: 1px solid #284763;">立即开户</a>
-	    		</span>
-	    	</div>
-	    </div>
-		<div ui-view="biggest" class="zhuyediv" style="margin-top: 70px;"></div>
+		<div class="zwd_header">
+			<div class="zwd_h_auto">
+				<a class="zwd_logo" href="javascript:;" title="港股美股开户,美股港股交易-富途证券">
+					<img src="images/logo.png" alt="港股美股开户,美股港股交易-富途证券" />
+				</a>
+				<div id="zwd_nav" class="zwd_nav">
+					<ul>
+						<li class="zwd_nav_item zwd_active"><a ui-sref="index">首页</a></li>
+						<li class="zwd_nav_item"><a sref="javascript:;">下载</a></li>
+						<li class="zwd_nav_item"><a ui-sref="help">帮助</a></li>
+						<li class="zwd_nav_item"><a ui-sref="about">关于</a></li>
+						<li class="zwd_nav_item zwd_nav_item_spec zwd_nav_item_user ">
+							<a href="javascript:;">
+								<i class="zwd_icon zwd_icon_user"></i>
+								我的富途
+							</a>
+						</li>
+						<li class="zwd_nav_item zwd_nav_item_spec zwd_nav_item_setup"><a href="javascript:;">立即开户</a></li>
+					</ul>
+				</div>
+				<a href="javascript:;" class="zwd_btn_menu" id="zwd_btn_menu">
+					<div class="zwd_inner">
+						<span class="zwd_line zwd_line_01"></span>
+						<span class="zwd_line zwd_line_02"></span>
+						<span class="zwd_line zwd_line_03"></span>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div ui-view="biggest" class="zhuyediv" ></div>
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
 		<script>
 			! function(A, n, g, u, l, a, r) {
@@ -65,6 +84,7 @@
 		<!-- build:js({.tmp,app}) scripts/scripts.js -->
 		<script src="scripts/app.js"></script>
 		<script src="scripts/controllers/main.js"></script>
+		<script src="scripts/controllers/index.js"></script>
 		<!-- endbuild -->
 	</body>
 
