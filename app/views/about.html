@@ -1,1 +1,49 @@
-<div ng-controller="about">123</div>
+<div ng-controller="about" style="background: #f0f0f0; padding: 20px 0 40px 0;">
+	<div class="zf_main">
+		<div class="zf_left">
+			<div class="zf_h">
+				<h3>关于富途</h3>
+			</div>
+			<div class="zf_nav">
+				<ul>
+					<li><a ui-sref="about.one" ui-sref-active="hover"><span>公司简介</span></a></li>
+					<li><a ui-sref="about.shareholder" ui-sref-active="hover"><span>股东背景</span></a></li>
+					<li><a ui-sref="about.qualification" ui-sref-active="hover"><span>劵商资质</span></a></li>
+					<li><a ui-sref="about.mediareport" ui-sref-active="hover"><span>媒体报道</span></a></li>
+					<li><a ui-sref="about.partner" ui-sref-active="hover"><span>合作伙伴</span></a></li>
+					<li><a ui-sref="about.customer" ui-sref-active="hover"><span>客户群体</span></a></li>
+					<li><a ui-sref="about.history" ui-sref-active="hover"><span>发展历程</span></a></li>
+					<li><a ui-sref="about.contact" ui-sref-active="hover"><span>联系富途</span></a></li>
+					<li><a ui-sref="about.joinus" ui-sref-active="hover"><span>加入富途</span></a></li>
+					<li><a ui-sref="about.embranchment" ui-sref-active="hover"><span>分支机构</span></a></li>
+					<li><a ui-sref="about.link" ui-sref-active="hover"><span>友情连接</span></a></li>
+				</ul>
+			</div>
+			<div class="zf_h">
+				<h3>协议及声明</h3>
+			</div>
+			
+				<div class="zf_nav" style="height: 156px;">
+				<ul>
+					<li><a ui-sref="about.condition" ui-sref-active="hover"><span>服务条款</span></a></li>
+					<li><a ui-sref="about.agreement" ui-sref-active="hover"><span>客户协议书</span></a></li>
+					<li><a ui-sref="about.disclaimer" ui-sref-active="hover"><span>免责及隐私声明</span></a></li>
+					<li><a ui-sref="about.oauth-agreement" ui-sref-active="hover"><span>富途登录服务协议</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="zf_right" ui-view="big">
+			
+		</div>
+	</div>
+	<!--<div>
+		<span>
+			<a ui-sref="about.one">111111</a>
+			<a ui-sref="about.two">222222</a>
+			<a ui-sref="about.three">333333</a>
+			<a ui-sref="about.four">444444</a>
+			<a ui-sref="about.five">555555</a>
+		</span>
+	</div>
+	<div ui-view="big"></div>-->
+</div>
