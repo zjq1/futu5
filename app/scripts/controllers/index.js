@@ -24,7 +24,14 @@ caidan.onclick=function(){
 		}
 		
 }
-//轮播图
+//mobile菜单点击事件--
+
+		
+	
+		
+	
+		
+
 
 
 

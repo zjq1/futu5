@@ -18,9 +18,28 @@
 .zwd_icon_user{width: 30px;height: 30px;margin-right: 8px;background-position:-52px -7px;vertical-align: middle;}
 .zwd_btn_menu{display: none;}
 /*首页div*/
-.zhuyediv{float:left;margin-top: 70px;}
+.zhuyediv{float:left;margin-top: 70px;width: 100%;}
 /*banner*/
-.zwd_banner{position: relative;top: 70px;}
+.zwd_banner{position: relative;}
 .zwd_content{width: 100%;height: 600px;overflow: hidden;background: #FFFFFF;}
-.zwd_banner_item{width: 100%;height: 100%;background: red;position: absolute;left: 0px;top: 0px;}
-.zwd_banner_inner{font-size: 26px;width: 100%;height: 100%;color: #FFFFFF;background-repeat: no-repeat;background-position: center;background-size: cover;}
+.zwd_banner_item{width: 100%;height: 100%;position: absolute;left: 0px;top: 0px;display: none;}
+.zwd_banner_inner{font-size: 26px;width: 100%;height: 100%;color: #FFFFFF;}
+.zwd_banner_one{background: url(../images/bg.jpg) no-repeat center center;background-size: cover;}
+.zwd_banner_1000{width: 1000px;margin: 0 auto;}
+.zwd_banner_1000 img{margin:52px 0px 20px;}
+.zwd_banner_two{background: url(../images/1347.jpg) no-repeat center center;background-size: cover;}
+.zwd_banner_three{background: url(../images/1338.jpg) no-repeat center center;background-size: cover;}
+.zwd_link{display: block;width: 100%;height: 100%;}
+.zwd_banner_four{background: url(../images/1329.jpg) no-repeat center center;background-size: cover;}
+.zwd_banner_five{background: url(../images/1314.jpg) no-repeat center center;background-size: cover;}
+.zwd_dis{display: block;}
+.zwd_trigger{width: 100%;margin:0 auto;position: absolute;bottom: 110px;height: 20px;margin-left: -5px;}
+.zwd_trigger_1000{width: 1000px;margin: 0 auto;}
+.zwd_trigger_item{padding: 5px;float: left;display: block;}
+.zwd_trigger_item span{display: block;width: 10px;height: 10px;opacity: 0.4;border-radius: 14px;background:#FFFFFF;}
+.zwd_opa span{opacity: 1;}
+.zwd_leftbtn{width: 120px;height: 538px;position: absolute;left: 0;top: 0;}
+.zwd_rightbtn{width: 120px;height: 538px;position: absolute;right: 0;top: 0;}
+.zwd_lbtn{width: 32px;height: 62px;position: absolute;top: 50%;margin-top: -31px;right: 0;background: url(../images/icon.png) no-repeat -523px 0px;opacity: 0;}
+.zwd_rbtn{width: 32px;height: 62px;position: absolute;top: 50%;margin-top: -31px;left: 0;background: url(../images/icon.png) no-repeat -563px 0px;opacity: 0;}
+.btn_setup{display: none;}

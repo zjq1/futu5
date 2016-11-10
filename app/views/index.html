@@ -1,3 +1,159 @@
 <div ng-controller="index">
-	wowowowowowowowoow
+	<div class="zwd_banner">
+		<div id="zwd_content" class="zwd_content">
+			<div class="zwd_banner_item zwd_dis">
+				<div class="zwd_banner_inner zwd_banner_one">
+					<div class="zwd_banner_1000">
+						<img src="../images/text.png" alt="港股美股 我选富途"/>
+						<p>腾讯战略投资 互联网券商NO.1</p>
+					</div>
+				</div>
+			</div>
+			<div class="zwd_banner_item">
+				<div class="zwd_banner_inner zwd_banner_two">
+					<a class="zwd_link" href="javascript:;" title="喜新念旧均有礼"></a>
+				</div>
+			</div>
+			<div class="zwd_banner_item">
+				<div class="zwd_banner_inner zwd_banner_three">
+					<a class="zwd_link" href="javascript:;" title="港股Lv2二期活动"></a>
+				</div>
+			</div>
+			<div class="zwd_banner_item">
+				<div class="zwd_banner_inner zwd_banner_four">
+					<a class="zwd_link" href="javascript:;" title="富途4周年活动聚合页"></a>
+				</div>
+			</div>
+			<div class="zwd_banner_item">
+				<div class="zwd_banner_inner zwd_banner_five">
+					<a class="zwd_link" href="javascript:;" title="毕马威"></a>
+				</div>
+			</div>
+		</div>
+		<div class="zwd_leftbtn">
+			<a id="zwd_lbtn" class="zwd_lbtn" href="javascript:;">
+				
+			</a>
+		</div>
+		<div class="zwd_rightbtn">
+			<a id="zwd_rbtn" class="zwd_rbtn" href="javascript:;">
+				
+			</a>
+		</div>
+		<div class="zwd_trigger">
+			<div id="zwd_triggers" class="zwd_trigger_1000">
+				<a class="zwd_trigger_item zwd_opa" href="javascript:;">
+					<span></span>
+				</a>
+				<a class="zwd_trigger_item" href="javascript:;">
+					<span></span>
+				</a>
+				<a class="zwd_trigger_item" href="javascript:;">
+					<span></span>
+				</a>
+				<a class="zwd_trigger_item" href="javascript:;">
+					<span></span>
+				</a>
+				<a class="zwd_trigger_item" href="javascript:;">
+					<span></span>
+				</a>
+			</div>
+		</div>
+		<a href="javascript:;" class="btn_setup">立即开户</a>
+	</div>
+	<script type="text/javascript">
+//轮播图
+		var trigger = $("#zwd_triggers").children();
+		var timer = null;
+		var nindex = 0;
+		
+		for(var i=0;i<trigger.length;i++){
+				trigger[i].index = i;
+				trigger[i].onclick = function(){
+					for(var i=0;i<trigger.length;i++){
+						trigger[i].className = "zwd_trigger_item";
+						$("#zwd_content").children().fadeOut()
+					}
+					nindex=this.index;
+					this.className = "zwd_trigger_item zwd_opa";
+					$("#zwd_content").children().eq(this.index).fadeIn()
+				}
+		}
+//		——————————————————————————————————————————————	
+		$(".zwd_leftbtn").mouseover(function(){
+			$("#zwd_lbtn").css({"opacity":"1"})
+			$("#zwd_rbtn").css({"opacity":"1"})
+		})
+		$(".zwd_rightbtn").mouseover(function(){
+			$("#zwd_lbtn").css({"opacity":"1"})
+			$("#zwd_rbtn").css({"opacity":"1"})
+		})
+		$(".zwd_leftbtn").mouseout(function(){
+			$("#zwd_lbtn").css({"opacity":"0"})
+			$("#zwd_rbtn").css({"opacity":"0"})
+		})
+		$(".zwd_rightbtn").mouseout(function(){
+			$("#zwd_lbtn").css({"opacity":"0"})
+			$("#zwd_rbtn").css({"opacity":"0"})
+		})
+//		——————————————————————————————————————————————
+		$("#zwd_content").mouseover(function(){
+			clearInterval(timer)
+			$("#zwd_lbtn").css({"opacity":"1"})
+			$("#zwd_rbtn").css({"opacity":"1"})
+		})
+		$("#zwd_content").mouseout(function(){
+			$("#zwd_lbtn").css({"opacity":"0"})
+			$("#zwd_rbtn").css({"opacity":"0"})
+			lunbo()
+		})
+		
+		$("#zwd_lbtn").click(function(){
+			nindex--;
+			if(nindex<0){
+				nindex=trigger.length-1
+			}
+			for(var i=0;i<trigger.length;i++){
+					trigger[i].className = "zwd_trigger_item";
+					$("#zwd_content").children().fadeOut();
+				}
+			trigger[nindex].className = "zwd_trigger_item zwd_opa";
+			$("#zwd_content").children().eq(nindex).fadeIn();
+		})
+		
+		$("#zwd_rbtn").click(function(){
+			nindex++;
+			if(nindex>=trigger.length){
+					nindex=0
+			}
+			for(var i=0;i<trigger.length;i++){
+					trigger[i].className = "zwd_trigger_item";
+					$("#zwd_content").children().fadeOut();
+				}
+			trigger[nindex].className = "zwd_trigger_item zwd_opa";
+			$("#zwd_content").children().eq(nindex).fadeIn();
+		})
+		
+		function lunbo(){
+			clearInterval(timer)
+			timer = setInterval(function(){
+				nindex++;
+				if(nindex>=trigger.length){
+					nindex=0
+				}
+				for(var i=0;i<trigger.length;i++){
+						trigger[i].className = "zwd_trigger_item";
+						$("#zwd_content").children().fadeOut()
+					}
+				trigger[nindex].className = "zwd_trigger_item zwd_opa";
+				$("#zwd_content").children().eq(nindex).fadeIn()
+			},5000)
+		}
+		lunbo()
+//轮播图--
+		
+
+			
+		
+	</script>
 </div>

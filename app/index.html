@@ -18,14 +18,17 @@
 	  	<link rel="stylesheet" href="styles/reset.css">
 	  	<link rel="stylesheet" href="styles/about.css">
 		<link rel="stylesheet" media="only screen and (min-width:641px)" href="styles/pc_index.css">
-		<link rel="stylesheet" media="only screen and (max-width:640px)" href="styles/mobile.css"> 
+		<link rel="stylesheet" media="only screen and (max-width:640px)" href="styles/mobile.css">
+		<!--[if lte IE 8]>
+	    <link rel="stylesheet" href="styles/pc_index.css">
+	    <![endif]-->
 		<!-- endbuild -->
 	</head>
 
 	<body ng-app="somenoteApp">
 		<!--[if lte IE 8]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+	      <p class="browsehappy">您的浏览器版本过低,部分效果显示不完整,请升级浏览器进行查看</p>
+	    <![endif]-->
 
 		<!-- Add your site or application content here -->
 		<div class="zwd_header">
