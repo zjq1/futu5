@@ -1,0 +1,96 @@
+<div ng-controller="setting" style="background: #f0f0f0; width: 100%; height: 100%;">
+	<div style="width: 100%; height: 70px;"></div>
+	<div class="zjq_main">
+		<div class="zjq_left">
+			<div class="zjq_title" style="border-top: none; margin-top: 0px;">
+				账户
+			</div>
+			<div class="zjq_content">
+				<a ui-sref="setting.account" ui-sref-active="hover">
+					<em style="background-position: 0 0;"></em>
+					<span>账户首页</span>
+				</a>
+				<a ui-sref="setting.base" ui-sref-active="hover">
+					<em style="background-position: 24.7% 3.8%;"></em>
+					<span>账户资料</span>
+				</a>
+				<a ui-sref="setting.modify-email" ui-sref-active="hover">
+					<em style="background-position: 12.3% 7.5%;"></em>
+					<span>密码安全</span>
+				</a>
+				<a ui-sref="setting.commission" ui-sref-active="hover">
+					<em style="background-position: 49.5% 3.9%;"></em>
+					<span>我的佣金</span>
+				</a>
+			</div>
+			<div class="zjq_title">
+				资金
+			</div>
+			<div class="zjq_content">
+				<a ui-sref="setting.cashin" ui-sref-active="hover">
+					<em style="background-position: 31% 0;"></em>
+					<span>存入资金</span>
+				</a>
+				<a ui-sref="setting.cachout" ui-sref-active="hover">
+					<em style="background-position: 0 4%;"></em>
+					<span>提取资金</span>
+				</a>
+				<a ui-sref="setting.currency-exchange" ui-sref-active="hover">
+					<em style="background-position: 18.4% 7.5%;"></em>
+					<span>货币兑换</span>
+				</a>
+				<a ui-sref="setting.cachlist" ui-sref-active="hover">
+					<em style="background-position: 24.7% 0;"></em>
+					<span>历史记录</span>
+				</a>
+			</div>
+			<div class="zjq_title">
+				股票
+			</div>
+			<div class="zjq_content" style="height: 214px;">
+				<a ui-sref="setting.buynewstock" ui-sref-active="hover">
+					<em style="background-position: 43.3% 3.8%;"></em>
+					<span>认购新股</span>
+				</a>
+				<a ui-sref="setting.stockin" ui-sref-active="hover">
+					<em style="background-position: 6% 3.8%;"></em>
+					<span>转入股票</span>
+				</a>
+				<a ui-sref="setting.stockout" ui-sref-active="hover">
+					<em style="background-position: 6.3% 3.8%;"></em>
+					<span>转出股票</span>
+				</a>
+				<a ui-sref="setting.equityRight" ui-sref-active="hover">
+					<em style="background-position: 6% 7.5%;"></em>
+					<span>申请供股</span>
+				</a>
+				<a ui-sref="setting.stockInterest" ui-sref-active="hover">
+					<em style="background-position: 0 7.8%;"></em>
+					<span>选股选息</span>
+				</a>
+				<a ui-sref="setting.buynewstocklist" ui-sref-active="hover">
+					<em style="background-position: 24.7% 0;"></em>
+					<span>历史记录</span>
+				</a>
+			</div>
+			<div class="zjq_title">
+				其他
+			</div>
+			<div class="zjq_content" style="height: 120px;">
+				<a ui-sref="setting.buyquotation" ui-sref-active="hover">
+					<em style="background-position: 37% 3.8%;"></em>
+					<span>实时行情</span>
+				</a>
+				<a ui-sref="setting.history" ui-sref-active="hover">
+					<em style="background-position: 6% 0;"></em>
+					<span>交易记录</span>
+				</a>
+				<a ui-sref="setting.invite" ui-sref-active="hover">
+					<em style="background-position: 37% 0;"></em>
+					<span>邀请关系</span>
+				</a>
+			</div>
+		</div>
+		<div class="zjq_right" ui-view="bigger"></div>
+	</div>
+</div>

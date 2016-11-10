@@ -17,18 +17,17 @@
 		<link rel="stylesheet" href="styles/main.css">
 	  	<link rel="stylesheet" href="styles/reset.css">
 	  	<link rel="stylesheet" href="styles/about.css">
+	  	<link rel="stylesheet" href="styles/setting.css">
+	  	<link rel="stylesheet" href="styles/help.css">
 		<link rel="stylesheet" media="only screen and (min-width:641px)" href="styles/pc_index.css">
-		<link rel="stylesheet" media="only screen and (max-width:640px)" href="styles/mobile.css">
-		<!--[if lte IE 8]>
-	    <link rel="stylesheet" href="styles/pc_index.css">
-	    <![endif]-->
+		<link rel="stylesheet" media="only screen and (max-width:640px)" href="styles/mobile.css"> 
 		<!-- endbuild -->
 	</head>
 
 	<body ng-app="somenoteApp">
 		<!--[if lte IE 8]>
-	      <p class="browsehappy">您的浏览器版本过低,部分效果显示不完整,请升级浏览器进行查看</p>
-	    <![endif]-->
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
 		<!-- Add your site or application content here -->
 		<div class="zwd_header">
@@ -39,11 +38,11 @@
 				<div id="zwd_nav" class="zwd_nav">
 					<ul>
 						<li class="zwd_nav_item zwd_active"><a ui-sref="index">首页</a></li>
-						<li class="zwd_nav_item"><a sref="javascript:;">下载</a></li>
+						<li class="zwd_nav_item"><a href="https://www.futunn.com/download">下载</a></li>
 						<li class="zwd_nav_item"><a ui-sref="help">帮助</a></li>
 						<li class="zwd_nav_item"><a ui-sref="about">关于</a></li>
 						<li class="zwd_nav_item zwd_nav_item_spec zwd_nav_item_user ">
-							<a href="javascript:;">
+							<a ui-sref="setting">
 								<i class="zwd_icon zwd_icon_user"></i>
 								我的富途
 							</a>

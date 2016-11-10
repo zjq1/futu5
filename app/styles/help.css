@@ -1,0 +1,28 @@
+.help_con{
+	width: 998px; height: 439px; background: #fff; border: 1px solid #dfdfdf; margin: 0 auto; margin-top: 20px;
+}
+.help_con1{
+	width: 1000px;
+	height: 59px;
+	padding: 8px 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 40px;
+    min-height: 40px;
+    color: #464646;
+    border-bottom: #ededed 3px solid;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.help_con span{
+	width: 249px; height: 146px; border-right: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf; display: block; float: left;
+}
+.help_con span:hover{
+	background: #f5f5f5;
+}
+.help_con span img{
+	display: block; width: 60px; height: 60px; margin: 0 auto; margin-top: 30px;
+}
+.help_con span font{
+	display: block; width: 248px; height: 22px; text-align: center; line-height: 22px; font-size: 14px; color: #393b3f; margin-top: 10px;
+}

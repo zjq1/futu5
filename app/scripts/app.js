@@ -9,7 +9,8 @@
  * Main module of the application.
  */
 angular
-  .module('somenoteApp', ["ui.router","ngCookies"]).controller('help',['$scope','$http','$cookieStore',function ($scope,$http,$cookieStore) {
+  .module('somenoteApp', ["ui.router","ngCookies"])
+  .controller('help',['$scope','$http','$cookieStore',function ($scope,$http,$cookieStore) {
 
 	}]).controller('index',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
 
@@ -45,7 +46,44 @@ angular
 
 	}]).controller('agreement',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
 
-	}]).config(['$stateProvider','$urlRouterProvider',function ($stateProvider,$urlRouterProvider){
+	}]).controller('setting',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('account',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('base',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('modify-email',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('commission',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('cashin',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('cachout',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('currency-exchange',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('cachlist',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('buynewstock',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('stockin',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('stockout',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('equityRight',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('stockInterest',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('buynewstocklist',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('buyquotation',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('history',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('invite',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}])
+	.config(['$stateProvider','$urlRouterProvider',function ($stateProvider,$urlRouterProvider){
 		$urlRouterProvider.when('','/index','/one')
 			$stateProvider.state('index',{
 				url:'/index',
@@ -69,6 +107,14 @@ angular
 					'biggest':{
 						templateUrl:'views/about.html',
 						controller:'about'
+					}
+				}
+			}).state('setting',{
+				url:'/setting',
+				views:{
+					'biggest':{
+						templateUrl:'views/setting.html',
+						controller:'setting'
 					}
 				}
 			}).state('about.one',{
@@ -189,6 +235,142 @@ angular
 					'big':{
 						templateUrl:'views/agreement.html',
 						controller:'agreement'
+					}
+				}
+			}).state('setting.account',{
+				url:'/account',
+				views:{
+					'bigger':{
+						templateUrl:'views/account.html',
+						controller:'account'
+					}
+				}
+			}).state('setting.base',{
+				url:'/base',
+				views:{
+					'bigger':{
+						templateUrl:'views/base.html',
+						controller:'base'
+					}
+				}
+			}).state('setting.modify-email',{
+				url:'/modify-email',
+				views:{
+					'bigger':{
+						templateUrl:'views/modify-email.html',
+						controller:'modify-email'
+					}
+				}
+			}).state('setting.commission',{
+				url:'/commission',
+				views:{
+					'bigger':{
+						templateUrl:'views/commission.html',
+						controller:'commission'
+					}
+				}
+			}).state('setting.cashin',{
+				url:'/cashin',
+				views:{
+					'bigger':{
+						templateUrl:'views/cashin.html',
+						controller:'cashin'
+					}
+				}
+			}).state('setting.cachout',{
+				url:'/cachout',
+				views:{
+					'bigger':{
+						templateUrl:'views/cachout.html',
+						controller:'cachout'
+					}
+				}
+			}).state('setting.currency-exchange',{
+				url:'/currency-exchange',
+				views:{
+					'bigger':{
+						templateUrl:'views/currency-exchange.html',
+						controller:'currency-exchange'
+					}
+				}
+			}).state('setting.cachlist',{
+				url:'/cachlist',
+				views:{
+					'bigger':{
+						templateUrl:'views/cachlist.html',
+						controller:'cachlist'
+					}
+				}
+			}).state('setting.buynewstock',{
+				url:'/buynewstock',
+				views:{
+					'bigger':{
+						templateUrl:'views/buynewstock.html',
+						controller:'buynewstock'
+					}
+				}
+			}).state('setting.stockin',{
+				url:'/stockin',
+				views:{
+					'bigger':{
+						templateUrl:'views/stockin.html',
+						controller:'stockin'
+					}
+				}
+			}).state('setting.stockout',{
+				url:'/stockout',
+				views:{
+					'bigger':{
+						templateUrl:'views/stockout.html',
+						controller:'stockout'
+					}
+				}
+			}).state('setting.equityRight',{
+				url:'/equityRight',
+				views:{
+					'bigger':{
+						templateUrl:'views/equityRight.html',
+						controller:'equityRight'
+					}
+				}
+			}).state('setting.stockInterest',{
+				url:'/stockInterest',
+				views:{
+					'bigger':{
+						templateUrl:'views/stockInterest.html',
+						controller:'stockInterest'
+					}
+				}
+			}).state('setting.buynewstocklist',{
+				url:'/buynewstocklist',
+				views:{
+					'bigger':{
+						templateUrl:'views/buynewstocklist.html',
+						controller:'buynewstocklist'
+					}
+				}
+			}).state('setting.buyquotation',{
+				url:'/buyquotation',
+				views:{
+					'bigger':{
+						templateUrl:'views/buyquotation.html',
+						controller:'buyquotation'
+					}
+				}
+			}).state('setting.history',{
+				url:'/history',
+				views:{
+					'bigger':{
+						templateUrl:'views/history.html',
+						controller:'history'
+					}
+				}
+			}).state('setting.invite',{
+				url:'/invite',
+				views:{
+					'bigger':{
+						templateUrl:'views/invite.html',
+						controller:'invite'
 					}
 				}
 			})
