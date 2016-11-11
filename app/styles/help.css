@@ -1,5 +1,5 @@
 .help_con{
-	width: 998px; height: 439px; background: #fff; border: 1px solid #dfdfdf; margin: 0 auto; margin-top: 20px;
+	width: 996px; height: 439px; border: 1px solid #dfdfdf; margin: 0 auto; margin-top: 20px; background: #fff;
 }
 .help_con1{
 	width: 1000px;
@@ -12,10 +12,9 @@
     color: #464646;
     border-bottom: #ededed 3px solid;
     margin: 0 auto;
-    padding-top: 20px;
 }
 .help_con span{
-	width: 249px; height: 146px; border-right: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf; display: block; float: left;
+	width: 248px; height: 146px; border-right: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf; display: block; float: left;
 }
 .help_con span:hover{
 	background: #f5f5f5;
@@ -25,4 +24,36 @@
 }
 .help_con span font{
 	display: block; width: 248px; height: 22px; text-align: center; line-height: 22px; font-size: 14px; color: #393b3f; margin-top: 10px;
+}
+
+.help_con1 input{
+	float: right;
+	width: 190px;
+	height: 34px;
+    line-height: 19px;
+    padding: 6px 5px;
+    background: #FFF;
+    border: #adb9c1 1px solid;
+    font-size: 14px;
+    line-height: 34px;
+}
+.help_con2{
+	width: 998px; height: 1599px; border: 1px solid #dfdfdf; margin: 0 auto; background: #fff; padding: 15px 40px;
+}
+.help_con2 ul li{
+	height: 40px;
+	line-height: 40px;
+    border-bottom: #ededed 1px dotted;
+    list-style-image: url(../images/point02.gif);
+    list-style-position: inside;
+}
+.help_con2 ul li a{
+	height: 40px;
+	color: #0a5ecc;
+	font-size: 14px;
+	line-height: 40px;
+	cursor: pointer;
+}
+.help_con2 ul li a:hover{
+	color: #0086ff;
 }
