@@ -12,7 +12,7 @@
     color: #464646;
     border-bottom: #ededed 3px solid;
     margin: 0 auto;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 .help_con span{
 	width: 249px; height: 146px; border-right: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf; display: block; float: left;

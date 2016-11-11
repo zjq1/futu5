@@ -25,8 +25,19 @@ caidan.onclick=function(){
 		
 }
 //mobile菜单点击事件--
-
-		
+//nav
+	var nav = document.getElementById("zwd_nav");
+	var navli = nav.getElementsByTagName("li");
+	for(var i=0;i<navli.length;i++){
+		navli[i].onclick=function(){
+			for(var i=0;i<navli.length;i++){
+				navli[i].className = "zwd_nav_item"
+			}
+			this.className = "zwd_nav_item zwd_active";
+			navli[4].className = "zwd_nav_item zwd_nav_item_spec zwd_nav_item_user zwd_active";
+			navli[5].className = "zwd_nav_item zwd_nav_item_spec zwd_nav_item_setup zwd_active"
+		}
+	}
 	
 		
 	
