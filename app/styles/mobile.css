@@ -42,8 +42,14 @@ color: #FFFFFF;text-align: center;}
 .zwd_leftbtn{display: none;}
 .zwd_rightbtn{display: none;}
 .zwd_opa span{opacity: 1;}
+.zwd_quick{display: none;}
 
-
+.zwd_onestop{padding-top: 28px;min-width: 100%;overflow: hidden;position:relative;background: #f6f7f7;}
+.zwd_h2{font-size: 21px;font-weight: bold;line-height: 28px;color: #353842;text-align: center;}
+.zwd_h3{font-size: 12px;font-weight: bold;line-height: 2;text-align: center;color: #595757;}
+.zwd_line_div{position: static;margin-top: 140px;display: block;}
+.zwd_web_img{display: none;}
+.zwd_mobile_img{height: 117px;margin-top: 0px;}
 
 
 
