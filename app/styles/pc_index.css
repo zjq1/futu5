@@ -46,11 +46,11 @@ a:active{text-decoration: none;}
 .zwd_rbtn{width: 32px;height: 62px;position: absolute;top: 50%;margin-top: -31px;left: 0;background: url(../images/icon.png) no-repeat -563px 0px;opacity: 0;}
 .btn_setup{display: none;}
 .zwd_quick{width: 100%;height: 62px;z-index: 1;position: relative;background: #f6f7f7;}
-.zwd_quick_nav{position: relative;top: -62px;width: 970px;height: 74px;padding: 25px 15px;font-size: 16px;background: #FFFFFF;overflow: hidden;margin: 0 auto;box-sizing: initial;transition: all 0.25s linear;}
+.zwd_quick_nav{position: relative;top: -62px;width: 970px;height: 74px;padding: 25px 15px;font-size: 16px;background: #FFFFFF;overflow: hidden;margin: 0 auto;box-sizing:content-box;transition: all 0.25s linear;}
 .zwd_info{float: left;padding-left: 18px;padding-right: 22px;line-height: 32px;color: #353842;margin-top: 5px;}
 .zwd_num{display: block;font-size: 26px;text-align: right;margin-bottom: 3px;color: #0a5ecb;}
 .zwd_btn:link{float: right;width: 240px;height: 52px;line-height: 52px;margin: 11px 14px 0px;border-radius: 5px;font-size: 20px;text-align: center;color:#FFFFFF;text-decoration: none;transition: all 0.25s linear;}
-.zwd_zcbtn:link{background: #0a5ecb;}
+.zwd_zcbtn{background: #0a5ecb;}
 .zwd_zcbtn:hover{color: #FFFFFF;background: #1d76eb;}
 .zwd_zcbtn:visited{color: #FFFFFF;text-decoration: none;}
 .zwd_dlbtn:link{background: #FFFFFF;border:1px solid #0a5ecb ;color:#0a5ecb;}
@@ -62,7 +62,7 @@ a:active{text-decoration: none;}
 .zwd_web_img{max-width: 100%;vertical-align:top;}
 .zwd_mobile_img{display: none;}
 .zwd_dotwrap{width: 34px;height: 34px;position: absolute;}
-.zwd_dot{width: 28px;height: 28px;border-radius: 34px;display: block;position: relative;left: -50%;top:-50%;border: 3px solid #c8c9c9;text-align: center;background: #ffffff;transition: all 0.3s linear;box-sizing: initial;}
+.zwd_dot{width: 28px;height: 28px;border-radius: 34px;display: block;position: relative;left: -50%;top:-50%;border: 3px solid #c8c9c9;text-align: center;background: #ffffff;transition: all 0.3s linear;box-sizing:content-box;}
 .zwd_dot i{position: absolute;left: 50%;top: 50%;width: 0px;height: 0px;border-radius: 4px;background: #0a5ecb;transition: all 0.3s;}
 .zwd_dot_hover{border-color: #0a5ecb;}
 .zwd_dot_hover i{width: 12px;height: 12px;border-radius: 6px;margin: -6px 0px 0px -6px;}
@@ -72,14 +72,16 @@ a:active{text-decoration: none;}
 .zwd_dot_04{left: 56.5%;top: 40.5%;}
 .zwd_dot_05{left: 71%;top: 31.4%;}
 .zwd_dot_06{left: 85.3%;top: 15%;}
-
-
-
-
-
-
-
-
+.zwd_label{font-size: 18px;position: absolute;z-index: 2;width: 13.5%;opacity: 0.5;transition: all 1s;transform: translate3d(0, 30px, 0);}
+.zwd_label p{position: relative;left: -50%;display: block;border-radius: 8px;line-height: 56px;text-align: center;font-size: 125%;color: #595757;background: #e2e2e2;}
+.zwd_label:after{content: "";position: relative;top: 9px;left: -12px;width: 0px;height: 0px;overflow: hidden;border-left: 10px solid transparent;border-right: 10px solid transparent;border-top: 10px solid #e2e2e2;}
+.zwd_label_01{left: 13.1%;bottom: 45%;}
+.zwd_label_02{left: 28%;bottom: 40%;}
+.zwd_label_03{left: 42.2%;bottom: 65%;}
+.zwd_label_04{left:56.5%;bottom: 80%;}
+.zwd_label_05{left:71%;bottom: 90%;}
+.zwd_label_06{left:85.3%;bottom: 106%;}
+.zwd_label_hover{opacity: 1;transform: translate3d(0, 0, 0);}
 
 
 

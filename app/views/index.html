@@ -173,8 +173,26 @@
 		<h2 class="zwd_h2">一个账户投资港美股</h2>
 		<h3 class="zwd_h3">腾讯 | 阿里 | 苹果 | 谷歌 身边的好公司尽在港美股</h3>
 		<div id="zwd_line_div" class="zwd_line_div">
+			<div class="zwd_label zwd_label_hover zwd_label_01 ">
+				<p>全球化资产配置</p>
+			</div>
+			<div class="zwd_label zwd_label_02">
+				<p>价值投资</p>
+			</div>
+			<div class="zwd_label zwd_label_03">
+				<p>交易品种丰富</p>
+			</div>
+			<div class="zwd_label zwd_label_04">
+				<p>T+0当日可卖出</p>
+			</div>
+			<div class="zwd_label zwd_label_05">
+				<p>无涨跌限制</p>
+			</div>
+			<div class="zwd_label zwd_label_06">
+				<p>市场透明规范</p>
+			</div>
 			<div class="zwd_dotwrap zwd_dot_01">
-				<span class="zwd_dot">
+				<span class="zwd_dot zwd_dot_hover">
 					<i></i>
 				</span>
 			</div>
@@ -212,14 +230,54 @@
 		$("#zwd_onestop").flowUp(".zwd_h3", { transalteY: 150, duration: 1 });
 		var linediv = document.getElementById("zwd_line_div");
 		var mspan = linediv.getElementsByTagName("span");
-		for(var i=0;i<mspan.length;i++){
-			mspan[i].onmouseover = function(){
-				for(var i=0;i<mspan.length;i++){
-					mspan[i].className = "zwd_dot"
+		var siv = null;
+		var arr = [0,1,2,3,4,5]
+		function suiji(){
+				clearInterval(siv)
+				siv=setInterval(function(){
+				if(arr.length == 0){
+					for(var i=0;i<mspan.length;i++){
+								mspan[i].className = "zwd_dot";
+								$(".zwd_label").eq(i).removeClass("zwd_label_hover")
+							}
+					arr = [0,1,2,3,4,5]
+				}else{
+					var needindexs = Math.floor(Math.random()*arr.length)
+				for(var i=0;i<arr.length;i++){
+					needindex = arr[needindexs]
 				}
-				this.className = "zwd_dot zwd_dot_hover"
+				for(var i=0;i<mspan.length;i++){
+					mspan[i].className = "zwd_dot";
+					$(".zwd_label").eq(i).removeClass("zwd_label_hover")
+				}
+					mspan[needindex].className = "zwd_dot zwd_dot_hover";
+					$(".zwd_label").eq(needindex).addClass("zwd_label_hover")
+					arr.splice(needindexs,1)
+				}
+			},2000)
+			for(var i=0;i<mspan.length;i++){
+				mspan[i].index = i;
+				var index = i
+				mspan[i].onmouseover = function(){
+					for(var i=0;i<mspan.length;i++){
+						mspan[i].className = "zwd_dot";
+						$(".zwd_label").eq(i).removeClass("zwd_label_hover")
+					}
+					this.className = "zwd_dot zwd_dot_hover";
+					$(".zwd_label").eq(this.index).addClass("zwd_label_hover")
+				}
 			}
 		}
+		
+		suiji()
+		$(".zwd_dot ").mouseover(function(){
+			clearInterval(siv)
+		})
+		$(".zwd_dot ").mouseout(function(){
+			suiji()
+		})
+		
+		
 	</script>
 </div>
 
