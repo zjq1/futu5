@@ -173,8 +173,26 @@
 		<h2 class="zwd_h2">一个账户投资港美股</h2>
 		<h3 class="zwd_h3">腾讯 | 阿里 | 苹果 | 谷歌 身边的好公司尽在港美股</h3>
 		<div id="zwd_line_div" class="zwd_line_div">
+			<div class="zwd_label zwd_label_hover zwd_label_01 ">
+				<p>全球化资产配置</p>
+			</div>
+			<div class="zwd_label zwd_label_02">
+				<p>价值投资</p>
+			</div>
+			<div class="zwd_label zwd_label_03">
+				<p>交易品种丰富</p>
+			</div>
+			<div class="zwd_label zwd_label_04">
+				<p>T+0当日可卖出</p>
+			</div>
+			<div class="zwd_label zwd_label_05">
+				<p>无涨跌限制</p>
+			</div>
+			<div class="zwd_label zwd_label_06">
+				<p>市场透明规范</p>
+			</div>
 			<div class="zwd_dotwrap zwd_dot_01">
-				<span class="zwd_dot">
+				<span class="zwd_dot zwd_dot_hover">
 					<i></i>
 				</span>
 			</div>
@@ -208,18 +226,176 @@
 		</div>
 	</div>
 	<script type="text/javascript">
+//第二块js部分
 		$("#zwd_onestop").flowUp(".zwd_h2", { transalteY: 100, duration: 1 });
 		$("#zwd_onestop").flowUp(".zwd_h3", { transalteY: 150, duration: 1 });
 		var linediv = document.getElementById("zwd_line_div");
 		var mspan = linediv.getElementsByTagName("span");
-		for(var i=0;i<mspan.length;i++){
-			mspan[i].onmouseover = function(){
-				for(var i=0;i<mspan.length;i++){
-					mspan[i].className = "zwd_dot"
+		var siv = null;
+		var arr = [0,1,2,3,4,5]
+		function suiji(){
+				clearInterval(siv)
+				siv=setInterval(function(){
+				if(arr.length == 0){
+					for(var i=0;i<mspan.length;i++){
+								mspan[i].className = "zwd_dot";
+								$(".zwd_label").eq(i).removeClass("zwd_label_hover")
+							}
+					arr = [0,1,2,3,4,5]
+				}else{
+					var needindexs = Math.floor(Math.random()*arr.length)
+				for(var i=0;i<arr.length;i++){
+					needindex = arr[needindexs]
 				}
-				this.className = "zwd_dot zwd_dot_hover"
+				for(var i=0;i<mspan.length;i++){
+					mspan[i].className = "zwd_dot";
+					$(".zwd_label").eq(i).removeClass("zwd_label_hover")
+				}
+					mspan[needindex].className = "zwd_dot zwd_dot_hover";
+					$(".zwd_label").eq(needindex).addClass("zwd_label_hover")
+					arr.splice(needindexs,1)
+				}
+			},2000)
+			for(var i=0;i<mspan.length;i++){
+				mspan[i].index = i;
+				var index = i
+				mspan[i].onmouseover = function(){
+					for(var i=0;i<mspan.length;i++){
+						mspan[i].className = "zwd_dot";
+						$(".zwd_label").eq(i).removeClass("zwd_label_hover")
+					}
+					this.className = "zwd_dot zwd_dot_hover";
+					$(".zwd_label").eq(this.index).addClass("zwd_label_hover")
+				}
 			}
 		}
+		suiji()
+		$(".zwd_dot ").mouseover(function(){
+			clearInterval(siv)
+		})
+		$(".zwd_dot ").mouseout(function(){
+			suiji()
+		})
+//第二块js部分--
+	</script>
+<!--第三块-->
+	<div id="zwd_service" class="zwd_service">
+		<div class="zwd_sWrap">
+			<h2 class="zwd_sWrap_h2">值得信赖 香港持牌券商新星</h2>
+			<a class="zwd_sWrap_a" ui-sref="about">了解更多</a>
+			<div class="zwd_sWrap_content">
+				<ul>
+					<li class="zwd_service_item zwd_service_item_01">
+						<a href="javascript:;" class="zwd_service_item_inner">
+							<div class="zwd_service_icon zwd_service_icon_01"></div>
+							<h3 class="zwd_sWrap_h3">实力雄厚</h3>
+							<p class="zwd_sWrap_p">位居香港券商Top5%行列<br />腾讯、经纬、红杉连续重金投资</p>
+						</a>
+					</li>
+					<li class="zwd_service_item zwd_service_item_02">
+						<a href="javascript:;" class="zwd_service_item_inner">
+							<div class="zwd_service_icon zwd_service_icon_02"></div>
+							<h3 class="zwd_sWrap_h3">资质合规</h3>
+							<p class="zwd_sWrap_p">香港证监会认可持牌法团<br />持有第1/2/4/9类牌照</p>
+						</a>
+					</li>
+					<li class="zwd_service_item zwd_service_item_03">
+						<a href="javascript:;" class="zwd_service_item_inner">
+							<div class="zwd_service_icon zwd_service_icon_03"></div>
+							<h3 class="zwd_sWrap_h3">佣金实惠</h3>
+							<p class="zwd_sWrap_p">港股佣金最低至0<br />美股佣金低至$0.01/股</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$("#zwd_service").flowUp(".zwd_sWrap_h2", { transalteY: 100, duration: 1 });
+		$("#zwd_service").flowUp(".zwd_sWrap_a", { transalteY: 150, duration: 1 });
+		$("#zwd_service").flowUp(".zwd_sWrap_h3", { transalteY: 100, duration: 1 });
+		$("#zwd_service").flowUp(".zwd_sWrap_p", { transalteY: 150, duration: 1 });
+	</script>
+	<div id="zwd_safe" class="zwd_safe">
+		<video class="zwd_safe_video" src="../images/safety.mp4" autoplay="autoplay" loop="loop"></video>
+		<div class="zwd_safe_wrap">
+			<h2 class="zwd_safe_h2">安全无忧 金融科技多重保障</h2>
+			<a href="javascript:;" class="zwd_safe_a">了解更多</a>
+			<div class="zwd_safe_content">
+				<div class="zwd_safe_item">
+					<div class="zwd_logoArea">
+						<img src="../images/safe_logo_01.png" alt="富途证券 保险"/>
+					</div>
+					<h3 class="zwd_safe_h3">规管保驾</h3>
+					<p class="zwd_safe_p">
+						遵循香港证监会严格监管<br />
+						客户资产独立托管于银行<br />
+						香港投资者赔偿基金提供15万港币保障<br />
+						美国证券投资者保护公司（SIPC）提供50万美元保障<br />
+					</p>
+				</div>
+				<div class="zwd_safe_item zwd_safe_marginLeft">
+					<div class="zwd_logoArea">
+						<img src="../images/safe_logo_02.png" alt="腾讯云"/>
+					</div>
+					<h3 class="zwd_safe_h3">科技护航</h3>
+					<p class="zwd_safe_p">
+						核心数据保险箱<br />
+						全方位防护客户信息安全<br />
+						腾讯云私有网络服务首家用户<br />
+						7×24小时稳定支持<br />
+					</p>
+				</div>
+			</div>
+			<div class="zwd_safe_trigger">
+				<a class="zwd_safe_trigger_item zwd_safe_opa" href="javascript:;">
+					<span></span>
+				</a>
+				<a class="zwd_safe_trigger_item" href="javascript:;">
+					<span></span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$("#zwd_safe").flowUp(".zwd_safe_h2", { transalteY: 100, duration: 1 });
+		$("#zwd_safe").flowUp(".zwd_safe_a", { transalteY: 150, duration: 1 });
+		$("#zwd_safe").flowUp(".zwd_logoArea", { transalteY: 150, duration: 1 });
+		$("#zwd_safe").flowUp("h3", { transalteY: 150, duration: 1 });
+		$("#zwd_safe").flowUp("p", { transalteY: 150, duration: 1 });
+		var timer2 = null;
+		var needNum = 0;
+		var safeTrigger = $(".zwd_safe_trigger_item")
+		
+		
+		function lunbo2(){
+			clearInterval(timer2)
+			timer2 = setInterval(function(){
+				needNum++;
+				if(needNum>=safeTrigger.length){
+					needNum=0
+				}
+					for(var i=0;i<safeTrigger.length;i++){
+					safeTrigger[i].index = i
+					safeTrigger[i].onclick = function(){
+							for(var i=0;i<safeTrigger.length;i++){
+							safeTrigger[i].className = "zwd_safe_trigger_item";
+							$(".zwd_safe_item").eq(i).fadeOut();
+						}
+						needNum = this.index;
+						safeTrigger[this.index].className = "zwd_trigger_item zwd_safe_opa";
+						$(".zwd_safe_item").eq(this.index).fadeIn();
+					}
+				}
+				for(var i=0;i<safeTrigger.length;i++){
+						safeTrigger[i].className = "zwd_safe_trigger_item";
+						$(".zwd_safe_item").eq(i).fadeOut();
+				}
+					safeTrigger[needNum].className = "zwd_trigger_item zwd_safe_opa";
+					$(".zwd_safe_item").eq(needNum).fadeIn();
+			},5000)
+		}	
+		lunbo2()
 	</script>
 </div>
 

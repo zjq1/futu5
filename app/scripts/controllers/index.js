@@ -39,7 +39,16 @@ caidan.onclick=function(){
 		}
 	}
 	
-		
+//nav问题
+	window.onresize = function(){
+		if(innerWidth>640){
+			zwd_nav.style.display = "block";
+			pd = true;
+		}else{
+			zwd_nav.style.display = "none";
+			pd = false;
+		}
+	}
 	
 		
 
