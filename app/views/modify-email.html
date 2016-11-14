@@ -1,3 +1,99 @@
 <div ng-controller="modify-email">
-	
+	<div class="account_title">密码安全</div>
+	<div class="email_tab">
+		<span>邮箱认证</span>
+		<span>手机认证</span>
+		<span>登录密码</span>
+		<span>交易密码</span>
+		<span>登录记录</span>
+	</div>
+	<div class="email_tab_con" style="display: none">
+		<div class="email_1">
+			<font>您当前还没认证邮箱！</font>认证后您可通过邮箱登录和找回密码，为了保障您的帐号安全，建议尽快认证邮箱！
+		</div>
+		<p style="margin-top: 20px;">
+			<span>注册邮箱</span>
+			<input type="email" />
+		</p>
+		<p>
+			<span>登录密码</span>
+			<input type="password" />
+		</p>
+		<button class="email_2">发送认证邮件</button>
+	</div>
+	<div class="email_tab_con" style="display: none">
+		<div class="email_3">
+			<b></b>
+			<en>您已成功认证手机号！</en>
+		</div>
+		<div class="email_4">
+			<span>当前认证手机号为：</span>
+			<b>188****9539</b>
+			<ee>更换</ee>
+		</div>
+	</div>
+	<div class="email_tab_con" style="display: none">
+		<p style="margin-top: 20px;">
+			<span style="width: 150px;">原来的登录密码</span>
+			<input type="password" />
+		</p>
+		<p>
+			<span style="width: 150px;">新登录密码</span>
+			<input type="password" />
+		</p>
+		<p>
+			<span style="width: 150px;">确认新登录密码</span>
+			<input type="password" />
+		</p>
+		<button class="email_2" style="margin-left: 160px;">保存</button>
+	</div>
+	<div class="email_tab_con" style="display: none">
+		<em></em>
+		<aaa>任何涉及交易、资金都影响账户安全的操作时，都需要输入交易密码。</aaa>
+		<aaa>您可以在账户开通后为自己设置交易密码。 <a href="https://www.futu5.com/account/setup">网上开户</a></aaa>
+	</div>
+	<div class="email_tab_con" style="display: none">
+		<table border="0" cellspacing="0" cellpadding="0">
+			<tr style="background: #f5f5f5; height: 25px; line-height: 25px;">
+				<td>时间</td>
+				<td>IP</td>
+			</tr>
+			<tr style="height: 25px;">
+				<td>2016-11-14 14:05:09</td>
+				<td>222.128.127.78</td>
+			</tr>
+			<tr style="height: 25px;">
+				<td>2016-11-14 08:10:33</td>
+				<td>61.50.111.10</td>
+			</tr>
+			<tr style="height: 25px;">
+				<td>2016-11-14 14:05:09</td>
+				<td>222.128.127.78</td>
+			</tr>
+			<tr style="height: 25px;">
+				<td>2016-11-14 08:10:33</td>
+				<td>61.50.111.10</td>
+			</tr>
+			<tr style="height: 25px;">
+				<td>2016-11-14 14:05:09</td>
+				<td>222.128.127.78</td>
+			</tr>
+			<tr style="height: 25px;">
+				<td>2016-11-14 08:10:33</td>
+				<td>61.50.111.10</td>
+			</tr>
+		</table>
+	</div>
+	<script>
+		$('.email_tab span').eq(0).addClass('hover').siblings().removeClass('hover')
+		$('.email_tab_con').eq(0).css('display','block')
+		$('.email_tab span').click(function(){
+			$(this).addClass('hover').siblings().removeClass('hover')
+			for( var i=0; i<3; i++){
+				$('.email_tab_con').css('display','none')
+			}
+			var index=$(this).index()
+			$('.email_tab_con').eq(index).css('display','block')
+		})
+	</script>
 </div>

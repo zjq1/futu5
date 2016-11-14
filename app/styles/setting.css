@@ -63,6 +63,7 @@
 	border-bottom: 1px solid #dfdfdf;
 	border-right: 1px solid #dfdfdf;
 }
+/*account*/
 .account_title{
 	width: 720px;
 	height: 59px;
@@ -141,6 +142,219 @@
 .zjq_4 font{
 	color: #0a5ecc;
 }
+.account_con1_tab{
+	width: 721px; height: 50px; margin-top: 30px; margin-bottom: 20px; border: 1px solid #dfdfdf;
+}
+.account_con1_tab a{
+	display: block; width: 239px; height: 48px; float: left; border-right: 1px solid #dfdfdf; color: #393b3f; cursor: pointer; background: #f5f5f5; border-bottom: 2px solid transparent;
+}
+.account_con1_tab a i{
+	background-image: url(../images/download.png); display: block; width: 30px; height: 24px; margin-right: 8px; margin-top: 12px;float: left;
+}
+.account_con1_tab a span{
+	display: block; float: left; margin-top: 12px;
+    height: 24px;
+    line-height: 22px;
+    font-size: 16px;
+}
+.account_con1_tab a.hover{
+	background-color: #fff;
+    color: #393b3f;
+    text-decoration: none;
+    border-bottom: 2px solid #0086ff;
+}
+.account_con1_tab a:hover{
+	background-color: #fff;
+    color: #393b3f;
+    text-decoration: none;
+    border-bottom: 2px solid #0086ff;
+}
+.account_con1_con{
+	width: 684px; height: 264px; margin-left: 37px;
+}
+.account_con1_con ul{
+	height: 30px; line-height: 30px;
+}
+.account_con1_con ul li{
+	width: 342px; height: 30px; line-height: 30px; color: #393b3f; float: left;
+}
+.account_con1_con div{
+	font-size: 30px;
+    font-weight: bolder;
+    height: 50px;
+    line-height: 48px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: #EDEDED 1px dashed;
+}
+.account_con1_con p{
+	line-height: 28px;
+	color: #393b3f;
+}
+.account_con1_con a.know{
+	margin-top: 20px;
+	border-radius: 3px;
+	text-align: center;
+	height: 40px;
+    line-height: 38px;
+    font-size: 16px;
+    padding: 0 18px;
+    min-width: 138px;
+    background: #fe5f05;
+    border: #fe5f05 1px solid;
+    color: #FFF!important;
+    display: inline-block;
+    vertical-align: top;
+}
+table,th,td{
+	border: 1px solid #dfdfdf;
+	vertical-align:middle;
+	
+}
+table{
+	width: 720px;
+}
+td{
+	margin-left: 10px;
+	padding-left: 8px;
+}
+tr:hover{
+	background: #E7F4FB;
+}
+td span{
+	display: block;
+	height: 32px;
+	line-height: 32px;
+}
+td a{
+	color: #0a5ecc;
+}
+td a:hover{
+	color: #0086ff;
+	text-decoration: underline;
+}
+/*email*/
+.email_tab{
+	width: 720px;
+	height: 53px;
+    background-color: #f8f8f8;
+    border-bottom: #e0e0e0 1px solid;
+    padding: 12px 12px 0;
+    margin-bottom: 20px;
+}
+.email_tab span{
+	display: block; width: 82px; height: 41px; float: left; text-align: center; line-height: 41px; margin-right: 10px; border: 1px solid transparent; border-bottom: 0; color: #0a5ecc; cursor: pointer;
+}
+.email_tab span:hover{
+	background: #efefef; color: #50a9f9;
+}
+.email_tab span.hover{
+	border: #e0e0e0 1px solid;
+    border-bottom: 0;
+    background-color: #FFF;
+    color: #000;
+}
+
+.email_tab_con div.email_1{
+	color: #000;width: 710px; height: 36px;border: 1px solid #e7d7a6;
+    background: #fefcef;
+    padding-left: 10px;
+    line-height: 36px;
+    height: 36px;
+}
+.email_tab_con div.email_1 font{
+	color: #ff9900;
+}
+.email_tab_con p{
+	width: 720px; height: 56px;
+}
+.email_tab_con p span{
+	width: 120px; height: 56px; padding-left: 30px; display: block; float: left;
+}
+.email_tab_con p input{
+	display: block; float: left; width: 230px;height: 34px;
+    line-height: 19px;
+    padding: 6px 5px;
+    background: #FFF;
+    border: #adb9c1 1px solid;
+    margin-left: 10px;
+}
+.email_tab_con button.email_2{
+	background: #0a5ecc;
+	border: none;
+	height: 42px;
+    min-width: 138px;
+    padding-bottom: 2px;
+    color: #FFF!important;
+    line-height: 38px;
+    font-size: 16px;
+    padding: 0 18px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 3px;
+    margin-top: 15px; margin-left: 130px;
+}
+.email_tab_con button.email_2:hover{
+	cursor: pointer;
+	background: #2f76d3;
+}
+.email_tab_con em{
+	display: block;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 25px;
+    margin-top: 70px;
+    background: url(../images/download.png) 0 -490px;
+}
+.email_tab_con aaa{
+	display: block; width: 720px;line-height: 24px;
+    text-align: center;
+        color: #b6b6b6;
+        text-decoration: none;
+}
+.email_tab_con aaa a:hover{
+	text-decoration: underline;
+	color: #50a9f9;
+}
+.email_3{
+	background-color: #ffc;
+    border: #ffdd58 1px solid;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    word-break: break-all;
+    height: 48px;
+}
+.email_3 b{
+	display: inline-block; height: 26px; width: 26px; background-image:url(../images/download.png) ; background-position: -930px -2170px; float: left; margin-right: 5px;
+}
+.email_3 en{
+	display: block; float: left; margin-top: 5px;
+}
+.email_4 span{
+	display: block; float: left; margin-left: 30px; width: 130px; line-height: 48px;
+}
+.email_4 b{
+	display: block; float: left; line-height: 48px;
+}
+.email_4 ee{
+	display: block; float: left; width: 40px; height: 26px; border: 1px solid #dfdfdf; margin-top: 11px; margin-left: 10px; text-align: center; line-height: 24px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
