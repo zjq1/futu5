@@ -39,12 +39,18 @@ caidan.onclick=function(){
 		}
 	}
 	
-//nav问题
+//nav pc切换mobile
 	window.onresize = function(){
 		if(innerWidth>640){
 			zwd_nav.style.display = "block";
 			pd = true;
 		}else{
+			ospan[1].style.display = "block";
+			ospan[0].style.transform = "rotate(0deg) translate3d(0px, 0px, 0)";
+			ospan[2].style.transform = "rotate(0deg) translate3d(0px, 0px, 0)";
+			setTimeout(function(){
+				ospan[1].style.left = 12+"px";
+			},50)
 			zwd_nav.style.display = "none";
 			pd = false;
 		}
