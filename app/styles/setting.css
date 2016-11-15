@@ -341,16 +341,56 @@ td a:hover{
 	display: block; float: left; width: 40px; height: 26px; border: 1px solid #dfdfdf; margin-top: 11px; margin-left: 10px; text-align: center; line-height: 24px ;
 }
 
-
-
-
-
-
-
-
-
-
-
+/*cashin*/
+.account_title a{
+	display: block; font-size: 14px; float: right;
+}
+.account_title a:hover{
+	text-decoration: underline;
+}
+.cashin_lider{
+	margin-top: 20px;
+	width: 720px; height: 38px;border-color: #f9e7c2;
+    color: #fe5f05;
+    background: #f9e7c2;
+    line-height: 38px;
+    padding-left: 10px;
+}
+.cashin_lider a{
+	display: inline-block;
+	margin-left: 7px;
+	color: #0a5ecc;
+}
+.cashin_lider a:hover{
+	color: #0086ff;
+	text-decoration: underline;
+}
+.cashin_guocheng{
+	width: 720px; height: 121px; margin-bottom: 34px;
+}
+.cashin_guocheng  ul{
+	position: relative;
+    top: 30px;
+    width: 66%;
+    border-top: 2px solid #BBBCC3;
+    margin: 0 auto;
+}
+.cashin_guocheng ul li{
+	position: absolute;
+    left: 0;
+    top: -14px;
+    width: 90px;
+    height: 64px;
+    margin-left: -45px;
+    text-align: center;
+    z-index: 11;
+}
+.cashin_guocheng  ul li font.step{
+	width: 26px; height: 26px; display: block; background: #BBBCC3; margin: 0 auto; margin-bottom: 18px; line-height: 26px; text-align: center; border-radius: 50%; color: #fff;
+}
+.cashin_title p{
+	width: 720px; height: 28px; line-height: 28px; padding-left: 10px;
+}
 
 
 
