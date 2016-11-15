@@ -3,7 +3,7 @@
 	float: none;
 }
 .zf_main{
-	width: 1000px;
+	width: 1005px;
 	margin: 0 auto;
 	overflow: hidden;
 	border: #DFDFDF 1px solid;
@@ -83,7 +83,7 @@
     border-left: 1px solid #DFDFDF;
 }
 .zf_right .zf_biao{
-	padding: 8px 0;
+	padding: 15px 0;
     margin-bottom: 20px;
     font-size: 24px;
     line-height: 40px;
@@ -95,7 +95,7 @@
 .zf_right .zf_biao{
 	font-size: 22px;
     font-weight: normal;
-} 
+}
 .zf_mainn{
 	margin-bottom: 30px;
     font-size: 14px;
@@ -531,7 +531,7 @@ li.zf_fzn{
     margin-bottom: 10px;
 }
 .zf_you5 input{
-    height: 26px;
+    height: 40px;
     line-height: 26px;
     margin-right: 5px;
     width: 565px;
@@ -585,4 +585,82 @@ li.zf_fzn{
     width: 500px;
     height: 85px;
 }
+.zf_fuwu li{
+    background: url(../images/gif.gif) no-repeat 0 14px;
+    line-height: 30px;
+    min-height: 30px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    color: #393B3F;
+}
+.zf_mz{
+    margin-bottom: 10px;
+    text-indent: 2em;
+    color: #393B3F;
+}
+.zf_mz1{
+    padding-left: 24px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 24px; 
+    color: #393B3F;
+}
+.zf_mz1 .zf_mz2 .zf_mz4{
+    list-style: decimal;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+.zf_mz3 li{
+    list-style: disc;
+    margin-left: 22px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+.zf_dao{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    min-height: 20px;
+    margin-bottom: 12px;
+    border-bottom: #ededed 1px solid;
+    padding: 8px 0;
+    position: relative;
+}
+.zf_deng{
+    margin-bottom: 10px;
+    text-indent: 2em;
+}
+.zf_mainn strong{
+    font-weight: bold;
+    text-indent: 2em;
+}
+
+.zf_deng1{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.zf_deng2{
+    padding-left: 40px;
+    position: relative;
+    min-height: 24px;
+}
+.zf_deng2 em{
+    position: absolute;
+    line-height: 24px;
+    height: 24px;
+    left: 0;
+    top: 0;
+    font-style: normal;
+}
+.zf_deng2 p{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
 
