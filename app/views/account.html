@@ -26,4 +26,82 @@
 			</div>
 		</div>
 	</div>
+	<div class="account_con1_tab">
+		<a>
+			<i style="background-position: 360px 670px; margin-left: 35px;"></i>
+			<span>港股账户（港币）</span>
+		</a>
+		<a>
+			<i style="background-position: 360px 620px; margin-left: 35px;"></i>
+			<span>美股账户（美元）</span>
+		</a>
+		<a style=" border-right: none;">
+			<i style="background-position: 320px 670px; margin-left: 30px;"></i>
+			<span>A股账户（人民币）</span>
+		</a>
+	</div>
+	<div class="account_con1_con">
+		<ul>
+			<li>资产净值（港币）</li>
+			<li>账户状态：未开户</li>
+		</ul>
+		<div>0.00</div>
+		<p>证券市值：<span>0.00</span></p>
+		<p>现金：<span>0.00</span></p>
+		<p>购买力：<span>0.00</span></p>
+		<a class="know">立即开通</a>
+		
+	</div>
+	<div class="account_con1_con" style="display: none;">
+		<ul>
+			<li>资产净值（美元）</li>
+			<li>账户状态：未开户</li>
+		</ul>
+		<div>0.00</div>
+		<p>证券市值：<span>0.00</span></p>
+		<p>现金：<span>0.00</span></p>
+		<p>购买力：<span>0.00</span></p>
+		<a class="know">立即开通</a>
+	</div>
+	<div class="account_con1_con" style="margin-left: 0px; display: none;">
+		<table border="0" cellspacing="0" cellpadding="0">
+			<tr style="background: #f5f5f5; height: 44px; line-height: 44px;">
+				<td style="width: 170px;">券商</td>
+				<td style="width: 305px;">交易平台</td>
+				<td style="width: 100px;">佣金费率</td>
+				<td style="width: 100px;">详情</td>
+			</tr>
+			<tr>
+				<td><img src="../images/changcheng.png" style="margin-top: 6px;" /></td>
+				<td>
+					<span>MAC/Windows/iOS/Android</span>
+					<span style="color: #a5a9af;">即将支持网页交易</span>
+				</td>
+				<td>万2.5</td>
+				<td><a href="https://www.futu5.com/faq/topic/tid/409">了解详情</a></td>
+			</tr>
+			<tr>
+				<td><img src="../images/zszqLogo.gif" style="margin-top: 6px;" /></td>
+				<td>
+					<span>仅支持网页交易</span>
+					<span style="color: #a5a9af;"><a href="https://my.futu5.com/cntrade">进入网页交易</a></span>
+				</td>
+				<td>万2.5</td>
+				<td><a href="https://www.futu5.com/zszq/detail">了解详情</a></td>
+			</tr>
+		</table>
+	</div>
+	<script>
+		$('.account_con1_tab a').eq(0).addClass('hover')
+		$('.account_con1_con').eq(0).css('display','block')
+		$('.account_con1_tab a').click(function(){
+			$(this).addClass('hover').siblings().removeClass('hover')
+			for( var i=0; i<3; i++){
+				$('.account_con1_con').css('display','none')
+			}
+			var index=$(this).index()
+			$('.account_con1_con').eq(index).css('display','block')
+		})
+	
+	</script>
 </div>
