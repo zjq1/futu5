@@ -63,7 +63,74 @@
 			</div>
 		</div>
 		<div ui-view="biggest" class="zhuyediv" ></div>
-		
+		<div id="zwd_footer" class="zwd_footer">
+			<div class="zwd_footer_wrap">
+				<div class="zwd_footer_nav">
+					<ul>
+						<li>
+							<div class="zwd_caption">
+								富途证券
+							</div>
+							<div class="zwd_footer_link">
+								<a href="javascript:;">收费标准</a>
+								<a href="javascript:;">交易工具</a>
+								<a href="javascript:;">联系富途</a>
+								<a href="javascript:;" title="富途反馈建议">反馈建议</a>
+							</div>
+						</li>
+						<li>
+							<div class="zwd_caption">
+								我的富途
+							</div>
+							<div class="zwd_footer_link">
+								<a href="javascript:;">立即开户</a>
+								<a href="javascript:;">账户统计</a>
+								<a href="javascript:;">存入资金</a>
+								<a href="javascript:;">转入股票</a>
+							</div>
+						</li>
+						<li>
+							<div class="zwd_caption">
+								条款声明
+							</div>
+							<div class="zwd_footer_link">
+								<a href="javascript:;">隐私声明</a>
+								<a href="javascript:;">服务条款</a>
+								<a href="javascript:;">常用链接</a>
+								<a href="javascript:;">网站地图</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="zwd_footer_content">
+					<div class="zwd_footer_content_caption">咨询电话</div>
+					<p class="zwd_footer_tel">
+						<img src="../images/tel.png" alt="400-870-1818" />
+					</p>
+					<p class="zwd_footer_time">
+						<span class="zwd_time_dt">交易日</span>
+						<span class="zwd_time_dd">09:00 - 次日05:00</span>
+					</p>
+					<p class="zwd_footer_time">
+						<span class="zwd_time_dt">非交易日</span>
+						<span class="zwd_time_dd">09:30 - 21:15</span>
+					</p>
+					<div class="zwd_btnGroup">
+						<a class="zwd_footer_btn" href="javascript:;">在线咨询</a>
+						<a class="zwd_footer_weixin" href="javascript:;"></a>
+						<a class="zwd_footer_weibo" href="javascript:;"></a>
+						<a class="zwd_footer_fack" href="javascript:;"></a>
+					</div>
+				</div>
+				<div class="zwd_footer_copy">
+					<span class="zwd_footer_pic">
+						<img src="../images/logo_copy.png" alt="富途证券 logo" />
+					</span>
+					<p><a href="javascript:;" title="港股美股开户,美股港股交易-富途证券">富途证券</a>为香港证监会认可的持牌法团（<a href="javascript:;">中央编号：AZT137</a>），提供证券交易服务并受其监管。</p>
+					<p class="zwd_footer_lastLine">©2016 富途证券国际(香港)有限公司版权所有。</p>
+				</div>
+			</div>
+		</div>
 
 		<!-- build:js(.) scripts/vendor.js -->
 		<!-- bower:js -->
@@ -81,6 +148,9 @@
 		<script src="scripts/controllers/main.js"></script>
 		<script src="scripts/controllers/index.js"></script>
 		<script src="scripts/controllers/flowup.js"></script>
+		<script type="text/javascript">
+			$("#zwd_footer").flowUp(".zwd_btnGroup", { transalteY: 150, duration: 1 });
+		</script>
 		<!-- endbuild -->
 	</body>
 
