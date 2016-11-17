@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登陆注册</title>
+		<link rel="stylesheet" href="styles/login.css" />
+		<script src="scripts/controllers/jquery-1.10.1.js"></script>
+		<script type="text/javascript" src="scripts/controllers/login.js" ></script>
+		<script>
+			var code ; //在全局 定义验证码
+function createCode(){ 
+code = new Array();
+var codeLength = 4;//验证码的长度
+var checkCode = document.getElementById("checkCode");
+checkCode.value = "";
+
+var selectChar = new Array(2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','J','K','L','M','N','P','Q','R','S','T','U','V','W','X','Y','Z');
+
+for(var i=0;i<codeLength;i++) {
+   var charIndex = Math.floor(Math.random()*32);
+   code +=selectChar[charIndex];
+}
+if(code.length != codeLength){
+   createCode();
+}
+checkCode.value = code;
+}
+
+function validate () {
+var inputCode = document.getElementById("input1").value.toUpperCase();
+
+if(inputCode.length <=0) {
+   alert("请输入验证码！");
+   return false;
+}
+else if(inputCode == code ){
+   alert("登录成功！");
+   return true;
+}
+else {
+   alert("验证码输入错误！");
+   
+createCode();
+   return false;
+}
+}
+		</script>
+	</head>
+	<body onLoad="createCode();">
+		<p class="saoma"><img src="../images/ma.png" />  扫码下载App</p>
+		<img src="../images/ma_2.png" class="big_ma" />
+		<div class="login_con">
+			<img src="../images/logo_1.png" class="logo_1" />
+			<div class="tab">
+				<div class="tab_login active">登录</div>
+				<div class="tab_reg">注册</div>
+			</div>
+			<!--点击注册后隐藏-->
+			<div class="s_h">
+				<input type="text" placeholder="牛牛号/手机号/邮箱" class="name">
+				<input type="password" placeholder="请输入密码" class="pwd"/>
+				<p class="chbx"><input type="checkbox" /> 两周内自动登录</p>
+				<input type="button" value="登录" id="Button"/>
+				<p class="other">
+					<a href="javascript:;">境外手机号登陆</a>
+					<a href="javascript:;">忘记密码</a>
+				</p>
+				<div class="fen_hr">
+					<div class="before"></div><div class="third">第三方账号登录</div><div class="after"></div>
+				</div>
+				<div class="others">
+					<div class="weixin"><a href="javascript:;"><img src="../images/weixin_1.png" /></a></div>
+					<div class="qq"><a href="javascript:;"><img src="../images/qq_1.png" /></a></div>
+					<div class="weibo"><a href="javascript:;"><img src="../images/weibo_1.png" /></a></div>
+					<div class="facebook"><a href="javascript:;"><img src="../images/facebook_1.png" /></a></div>
+					<div class="xx"><a href="javascript:;"><img src="../images/bird_1.png" /></a></div>
+				</div>
+			</div>
+			<!--点击注册后隐藏-->
+			<div class="s_h_2">
+				<!--<p class="choose_ch">
+					<a href="javascript:;">+86</a><br />
+					<a href="javascript:;">+852</a><br />
+					<a href="javascript:;">+853</a><br />
+					<a href="javascript:;">+886</a><br />
+					<a href="javascript:;">+355</a><br />
+					<a href="javascript:;">+213</a><br />
+					<a href="javascript:;">+93</a>
+				</p>-->
+				<div class="choose">  +86<img src="../images/low.png" /></div>
+				<input type="text" placeholder="  请输入手机号" class="reg_num">
+				<input type="password" placeholder="  请输入密码" class="reg_pwd" />
+				<input type="text" placeholder="验证码(不区分大小写)" class="pwd" id="input1" />
+				<input type="button" id="checkCode" class="code" style="width:100px" onClick="createCode()" onClick="createCode()"/>
+				<p class="chbx_2"><input type="checkbox" /> 同意并遵守<a href="javascript:;">隐私声明</a>和<a href="javascript:;">服务条款</a></p>
+				<input type="button" value="立即注册" id="Button1" onClick="validate();"/>
+				<div class="fen_hr">
+					<div class="before"></div><div class="third">第三方账号登录</div><div class="after"></div>
+				</div>
+				<div class="others">
+					<div class="weixin"><a href="javascript:;"><img src="../images/weixin_1.png" /></a></div>
+					<div class="qq"><a href="javascript:;"><img src="../images/qq_1.png" /></a></div>
+					<div class="weibo"><a href="javascript:;"><img src="../images/weibo_1.png" /></a></div>
+					<div class="facebook"><a href="javascript:;"><img src="../images/facebook_1.png" /></a></div>
+					<div class="xx"><a href="javascript:;"><img src="../images/bird_1.png" /></a></div><!---->
+				</div>
+			</div>
+		</div>
+		<div class="login_footer">
+			<p class="login_footer_p1">联系客服 400 870 1818</p>
+			<p class="login_footer_p2">©2016 富途证券国际(香港)有限公司 版权所有 </p>
+			<p class="login_footer_p3">粤ICP备08108712号-2</p>
+		</div>
+	</body>
+</html>

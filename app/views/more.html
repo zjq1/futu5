@@ -1,0 +1,26 @@
+<div ng-controller="more">
+	<div class="j_banner" style="margin-top: 20px;">
+		<img src="../images/wj_banner.jpg">
+	</div>
+	<div class="j_content">
+		<div class="j_all_left">
+			<div ui-view='small'></div>
+		</div>	
+		<!--右边部分-->
+		<aside><!--用来装载非正文的内容，被视为页面里面一个单独的部分。它包含的内容与页面的主要内容是分开的，可以被删除，而不会影响到网页的内容、章节或是页面所要传达的信息-->
+			<input type="text" placeholder="搜索...">
+			<div>
+				<p>分类目录</p>
+				<a href="#" ui-sref="more.produce" ui-sref-active="hover">产品介绍</</a>
+				<a href="#" ui-sref="more.active" ui-sref-active="hover">公司活动</a>
+				<a href="#" ui-sref="more.team" ui-sref-active="hover">团队分享</a>
+				<a href="#" ui-sref="more.report" ui-sref-active="hover">媒体报道</a>
+				<a href="#" ui-sref="more.honour" ui-sref-active="hover">荣誉奖项</a>
+			</div>
+			<span>
+				<img src="../images/j_weixin.png">
+				<p>富途证券微信公众号</p>
+			</span>
+		</aside>
+	</div>
+</div>

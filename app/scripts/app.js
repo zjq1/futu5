@@ -82,11 +82,26 @@ angular
 
 	}]).controller('invite',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
 
+	}]).controller('more',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('xiangqing',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('produce',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('active',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('honour',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('report',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
+	}]).controller('team',['$scope','$http','$cookieStore','$interval',function ($scope,$http,$cookieStore,$interval) {
+
 	}])
 	.config(['$stateProvider','$urlRouterProvider',function ($stateProvider,$urlRouterProvider){
 		$urlRouterProvider.when('','/index')
 		$urlRouterProvider.when('/about','/about/one')
 		$urlRouterProvider.when('/setting','/setting/base')
+		$urlRouterProvider.when('/more','/more/xiangqing')
 			$stateProvider.state('index',{
 				url:'/index',
 				views:{
@@ -117,6 +132,14 @@ angular
 					'biggest':{
 						templateUrl:'views/setting.html',
 						controller:'setting'
+					}
+				}
+			}).state('more',{
+				url:'/more',
+				views:{
+					'biggest':{
+						templateUrl:'views/more.html',
+						controller:'more'
 					}
 				}
 			}).state('about.one',{
@@ -373,6 +396,54 @@ angular
 					'bigger':{
 						templateUrl:'views/invite.html',
 						controller:'invite'
+					}
+				}
+			}).state('more.xiangqing',{
+				url:'/xiangqing',
+				views:{
+					'small':{
+						templateUrl:'views/xiangqing.html',
+						controller:'xiangqing'
+					}
+				}
+			}).state('more.produce',{
+				url:'/produce',
+				views:{
+					'small':{
+						templateUrl:'views/preduce.html',
+						controller:'produce'
+					}
+				}
+			}).state('more.active',{
+				url:'/active',
+				views:{
+					'small':{
+						templateUrl:'views/active.html',
+						controller:'active'
+					}
+				}
+			}).state('more.team',{
+				url:'/team',
+				views:{
+					'small':{
+						templateUrl:'views/team.html',
+						controller:'team'
+					}
+				}
+			}).state('more.report',{
+				url:'/report',
+				views:{
+					'small':{
+						templateUrl:'views/report.html',
+						controller:'report'
+					}
+				}
+			}).state('more.honour',{
+				url:'/honour',
+				views:{
+					'small':{
+						templateUrl:'views/honour.html',
+						controller:'honour'
 					}
 				}
 			})
