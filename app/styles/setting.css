@@ -4,16 +4,18 @@ input {
 
 .zjq_main {
 	width: 1000px;
-	height: 1346px;
+	overflow: hidden;
 	margin: 0 auto;
 	background: #fff;
+	border: 1px solid #dfdfdf;
 }
 
 .zjq_left {
 	width: 206px;
-	height: 1346px;
-	border: 1px solid #dfdfdf;
+	/*border: 1px solid #dfdfdf;*/
+	border-right: 0px;
 	float: left;
+	background: #fff;
 }
 
 .zjq_title {
@@ -65,14 +67,13 @@ input {
 }
 
 .zjq_right {
-	width: 794px;
-	height: 1346px;
+	width: 792px;
+	overflow: hidden;
 	float: left;
 	padding: 0 35px 0 35px;
 	background: #fff;
-	border-top: 1px solid #dfdfdf;
-	border-bottom: 1px solid #dfdfdf;
-	border-right: 1px solid #dfdfdf;
+	border-left: 1px solid #dfdfdf;
+	padding-bottom: 30px;
 }
 
 
@@ -986,3 +987,112 @@ table.cachlist_table2 tr {
 	text-align: center;
 	color: #b6b6b6;
 }
+.zjq_tankuang{
+	display: none;
+	position: absolute;
+	left: 50%; top: 50%; margin-left: -190px; margin-top: -93px;
+	width: 380px; height: 187px;
+}
+.zjq_tankuang p{
+	height: 34px;
+    line-height: 32px;
+    background-color: #0a5ecc;
+    border: #305280 1px solid;
+    border-bottom: 0;
+    position: relative;
+    padding-left: 13px;
+    color: #fff;
+}
+.zjq_tankuang p span{
+	width: 34px;
+	height: 34px;
+	float: right;
+	margin-top: -1px;
+	margin-right: -1px;
+	background: url(../images/zf2.png) -200px -630px;
+}
+.zjq_tankuang p span:hover{
+	background: url(../images/zf2.png) -240px -630px;
+}
+.zjq_tankuang div{
+	width: 380px; height: 109px;
+	padding: 30px;
+	border-left: #305280 1px solid;
+	border-right: #305280 1px solid;
+    line-height: 26px;
+}
+.zjq_tankuang div em{
+	line-height: 24px;
+    background: url(../images/zf2.png) -930px -2170px no-repeat;
+    padding-left: 36px;
+    min-height: 26px;
+    display: inline-block;
+    float: left;
+}
+.zjq_tankuang div font{
+	color: #637284;
+	float: left;
+	display: block;
+}
+.zjq_tankuang div a{
+	display: inline-block;
+	margin-left: 34px;
+}
+div.haha{
+	border: #305280 1px solid;
+    border-top: 0;
+    height: 43px;
+    line-height: 26px;
+    padding: 8px 13px;
+    background-color: #eaf0f7;
+    position: relative;
+    z-index: 1004;
+    display: block;
+}
+div.haha mm{
+	float: right;
+	background: #0a5ecc;
+    border: #0a5ecc 1px solid;
+    color: #FFF!important;
+    width: 50px;
+    height: 26px;
+    text-align: center;
+    border-radius: 3px;
+    line-height: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

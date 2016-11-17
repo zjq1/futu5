@@ -1,4 +1,4 @@
-<div ng-controller="cashin">
+<div ng-controller="cashin" style="position: relative;">
 	<div class="account_title">存入资金<a href="/#/setting/cachlist">历史记录</a></div>
 	<div class="cashin_lider">
 		抱歉您的账户尚未开通，暂时不能存入资金   <a>查看入金指引</a>
@@ -32,4 +32,22 @@
 			<hh>投资美股</hh>
 		</div>
 	</div>
+	<div class="zjq_tankuang">
+		<p>确认<span></span></p>
+		<div><em></em><font>抱歉您的账户尚未开通，暂时不能存入资金  </font><a href="https://www.futu5.com/faq/topic287" target="_blank">查看入金指引</a></div>
+		<div class="haha">
+			<mm>确认</mm>
+		</div>
+	</div>
+	<script>
+		$('.zjq_div').click(function(){
+			$('.zjq_tankuang').css('display','block')
+		})
+		$('.zjq_tankuang p span').click(function(){
+			$('.zjq_tankuang').css('display','none')
+		})
+		$('.haha mm').click(function(){
+			$('.zjq_tankuang').css('display','none')
+		})
+	</script>
 </div>
