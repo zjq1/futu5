@@ -1,3 +1,134 @@
 <div ng-controller="cachlist">
+	<div class="account_title">历史记录</div>
+	<div class="cachlist_tab">
+		<span>存入记录</span>
+		<span>提取记录</span>
+		<span>货币兑换</span>
+	</div>
+	<div class="cachlist_tab_con" style="display: none;">
+		<div class="cachlist_tab_con1">
+			<span><input type="text" value="所有货币" /><b></b><none><a>所有币种</a><a>港币</a><a>美元</a></none></span>
+			<span><input type="text" value="所有状态" /><b></b><none><a>所有状态</a><a>已到账</a><a>已驳回</a><a>已撤回</a><a>处理中</a></none></span>
+		</div>
+		<div class="cachlist_table1">
+			<table>
+				<tr>
+					<td width="106" valign="top"><div>日期</div></td>
+					<td width="50" valign="top"><div>币种</div></td>
+					<td width="145" valign="top"><div>账户号码</div></td>
+					<td width="118" valign="top" style="text-align: right; padding-right: 10px;"><div>通知金额</div></td>
+					<td width="93" valign="top" style="text-align: right; padding-right: 10px;"><div>实际到账金额<i></i></div></td>
+					<td width="60" valign="top"><div>状态</div></td>
+					<td width="140" valign="top"><div>操作</div></td>
+				</tr>
+			</table>
+			<table class="cachlist_table2">
+				<tr>
+					<td width="720"><div class="zjq_table2">港币到账总额：0.00</div><div class="zjq_table2">美元到账总额：0.00</div></td>
+				</tr>
+			</table>
+		</div>
+		<div class="cachlist_btm">
+			<em></em>
+			<p>暂无记录</p>
+		</div>
+	</div>
 	
+	<div class="cachlist_tab_con" style="display: none;">
+		<div class="cachlist_tab_con1">
+			<span><input type="text" value="所有货币" /><b></b><none><a>所有币种</a><a>港币</a><a>美元</a></none></span>
+			<span><input type="text" value="所有状态" /><b></b><none><a>所有状态</a><a>已到账</a><a>已驳回</a><a>已撤回</a><a>处理中</a></none></span>
+		</div>
+		<div class="cachlist_table1">
+			<table class="cachlist_table2">
+				<tr>
+					<td width="95" valign="top"><div>日期</div></td>
+					<td width="50" valign="top"><div>币种</div></td>
+					<td width="175" valign="top"><div>账户号码</div></td>
+					<td width="274" valign="top" style="text-align: right; padding-right: 10px;"><div>金额</div></td>
+					<td width="120" valign="top"><div>状态</div></td>
+					
+				</tr>
+			</table>
+			<table class="cachlist_table2">
+				<tr>
+					<td width="720"><div class="zjq_table2">港币到账总额：0.00</div><div class="zjq_table2">美元到账总额：0.00</div></td>
+				</tr>
+			</table>
+		</div>
+		<div class="cachlist_btm">
+			<em></em>
+			<p>暂无记录</p>
+		</div>
+	</div>
+	
+	<div class="cachlist_tab_con" style="display: none;">
+		<div class="cachlist_tab_con1">
+			<span><input type="text" value="所有货币" /><b></b><none><a>所有币种</a><a>港币</a><a>美元</a></none></span>
+			<span><input type="text" value="所有状态" /><b></b><none><a>所有状态</a><a>已到账</a><a>已驳回</a><a>已撤回</a><a>处理中</a></none></span>
+		</div>
+		<div class="cachlist_table1">
+			<table class="cachlist_table2">
+				<tr>
+					<td width="95" valign="top"><div>日期</div></td>
+					<td width="120" valign="top"><div>兑换类型</div></td>
+					<td width="198" valign="top"><div>兑换金额</div></td>
+					<td width="190" valign="top"><div>兑换结果</div></td>
+					<td width="120" valign="top"><div>状态</div></td>
+					
+				</tr>
+			</table>
+			<table class="cachlist_table2">
+				<tr>
+					<td width="720"><div class="zjq_table2">港币到账总额：0.00</div><div class="zjq_table2">美元到账总额：0.00</div></td>
+				</tr>
+				<tr>
+					<td width="720"><div class="zjq_table2">港币到账总额：0.00</div><div class="zjq_table2">美元到账总额：0.00</div></td>
+				</tr>
+			</table>
+		</div>
+		<div class="cachlist_btm">
+			<em></em>
+			<p>暂无记录</p>
+		</div>
+	</div>
+	<script>
+		$('.cachlist_tab span').eq(0).addClass('hover').siblings().removeClass('hover')
+		$('.cachlist_tab_con').eq(0).css('display','block')
+		$('.cachlist_tab span').click(function(){
+			$(this).addClass('hover').siblings().removeClass('hover')
+			for( var i=0; i<3; i++){
+				$('.cachlist_tab_con').css('display','none')
+			}
+			var index=$(this).index()
+			$('.cachlist_tab_con').eq(index).css('display','block')
+		})
+		
+		var aaa=true
+		$('.cachlist_tab_con span').eq(0).click(function(){
+			if(aaa ==true ){
+				$('.cachlist_tab_con span:eq(0) none').css('display','block')
+				aaa= false;
+				$('.cachlist_tab_con span:eq(0) none a').click(function(){
+					$('.cachlist_tab_con span:eq(0) input').val($(this).html())
+				})
+			}else{
+				$('.cachlist_tab_con span:eq(0) none').css('display','none')
+				aaa = true
+			}
+			
+		})
+		$('.cachlist_tab_con span').eq(1).click(function(){
+			if(aaa ==true ){
+				$('.cachlist_tab_con span:eq(1) none').css('display','block')
+				aaa= false;
+				$('.cachlist_tab_con span:eq(1) none a').click(function(){
+					$('.cachlist_tab_con span:eq(1) input').val($(this).html())
+				})
+			}else{
+				$('.cachlist_tab_con span:eq(1) none').css('display','none')
+				aaa = true
+			}
+		})
+	</script>
 </div>

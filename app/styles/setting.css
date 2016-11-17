@@ -1,15 +1,17 @@
+input{
+	outline: none;
+}
 .zjq_main{
 	width: 1000px;
-	height: 1196px;
+	height: 1346px;
 	margin: 0 auto;
-	margin-bottom: 40px;
+	background: #fff;
 }
 
 .zjq_left{
 	width: 206px;
-	height: 1196px;
+	height: 1346px;
 	border: 1px solid #dfdfdf;
-	background: #fff;
 	float: left;
 }
 .zjq_title{
@@ -54,8 +56,8 @@
 	margin-left: 10px;
 }
 .zjq_right{
-	width: 790px;
-	height: 1196px;
+	width: 794px;
+	height: 1346px;
 	float: left;
 	padding: 0 35px 0 35px;
 	background: #fff;
@@ -388,9 +390,349 @@ td a:hover{
 .cashin_guocheng  ul li font.step{
 	width: 26px; height: 26px; display: block; background: #BBBCC3; margin: 0 auto; margin-bottom: 18px; line-height: 26px; text-align: center; border-radius: 50%; color: #fff;
 }
-.cashin_title p{
-	width: 720px; height: 28px; line-height: 28px; padding-left: 10px;
+p.cashin_title{
+	width: 720px; height: 28px; line-height: 28px; padding-left: 10px; font-size: 18px;
 }
+.cashin_tab{
+	width: 720px; height: 180px; margin-top: 40px; margin-left: 80px;
+}
+.cashin_tab div{
+	float: left;
+    width: 238px;
+    height: 138px;
+    margin: 20px;
+    border: 1px solid #adb9c1 !important;
+    text-align: center;
+}
+.cashin_tab div span{
+	display: block; width: 60px; height: 46px; margin: 0 auto; margin-bottom: 15px; margin: 23px auto 16px; background-image:url(../images/icon2.png);
+}
+.cashin_tab font{
+	display: block; color: #333; font-size: 16px;
+}
+.cashin_tab hh{
+	display: block; color: #696969;
+}
+.cashin_tab div.zjq_div:hover{
+	background: #F5FDFF;
+	border: 1px solid #60ACFA !important;
+}
+/*cachout*/
+.cachout_con{
+	width: 720px; height: 871px;
+}
+.cachout_con div{
+	height: 56px;
+}
+.cachout_con div font{
+	display: block; float: left; width: 120px; margin-left: 30px; font-size: 14px; line-height: 56px; height: 56px;
+}
+.cachout_con div b{
+	width: 570px; height: 56px; float: left; display: block; font-weight: inherit; line-height: 56px;
+}
+.cachout_con div b span{
+	display: inline-block;
+    float: left;
+    margin-top: 12px;
+    margin-right: 10px;
+    position: relative;
+    height: 32px;
+    line-height: 31px;
+    padding: 0 10px;
+    border: #adb9c1 1px solid;
+    cursor: pointer;
+    font-size: 14px;
+}
+.cachout_con div b span:hover{
+	background-color: #eaf9ff;
+	border: #4c78b9 1px solid;
+	cursor: pointer;
+}
+.cachout_con div b em{
+	display: block;
+	width: 11px;
+    height: 11px;
+    line-height: 0;
+    font-size: 0;
+    background: url(/images/zf2.png) no-repeat -840px -1830px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.cachout_con div b input{
+	display: inline-block;
+    vertical-align: top;
+    width: 215px;
+    padding-right: 20px;
+    height: 32px;
+    line-height: 17px;
+    padding: 3px 5px;
+    background: #FFF;
+    border: #adb9c1 1px solid;
+    font-size: 14px;
+    margin-top: 12px;
+}
+.cachout_con div b i{
+	color: orange;
+	font-weight: bold;
+	margin-top: 20px;
+	display: inline-block;
+}
+.cachout_con div b t{
+	display: inline-block;
+	margin-top: 5px;
+	color: #a5a9af;
+}
+.cachout_con div b t a{
+	color: #0a5ecc;
+}
+.cachout_con div b t a:hover{
+	color: #0086ff;
+	text-decoration: underline;
+}
+.cachout_con div b ab{
+	display: inline-block;
+    float: left;
+    margin-top: 12px;
+    margin-right: 10px;
+    height: 32px;
+    line-height: 31px;
+    padding: 0 10px;
+    border: #adb9c1 1px solid;
+    cursor: pointer;
+    font-size: 14px;
+    background: #f2f2f2;
+    color: #999;
+}
+.cachout_con div b img{
+	display: inline-block; margin-top: 15px;
+}
+.cachout_con div b a{
+	color: #0a5ecc;
+}
+.cachout_con div b a:hover{
+	color: #0086ff;
+	text-decoration: underline;
+}
+.cachout_con div b haha{
+	display: block;
+	float: left;
+	width: 16px;
+    height: 16px;
+    background: url(../images/zf2.png) no-repeat -530px -430px;
+    vertical-align: middle;
+    margin: 15px 5px 0 5px;
+}
+div.zjq_requce{
+	width: 720px; height: 107px; margin-bottom: 30px; border-bottom: 1px solid #ededed;
+}
+div.zjq_requce a{
+	margin: 50px 0 0 155px;
+	display: block;
+	width: 138px;
+	height: 40px;
+    line-height: 38px;
+    font-size: 16px;
+    padding: 0 18px;
+    min-width: 100px;
+    background: #0a5ecc;
+    border: #0a5ecc 1px solid;
+    color: #FFF!important;
+    text-align: center;
+    border-radius: 3px;
+}
+div.zjq_requce a:hover{
+	cursor: pointer;
+}
+.cachout_con p{
+	width: 720px; height: 28px;
+}
+.cachout_con p a{
+	cursor: pointer;
+	color: #0a5ecc;
+}
+.cachout_con p a:hover{
+	color: #0086ff;
+	text-decoration: underline;
+}
+
+/*currency-exchange*/
+.cachout_con div b span d{
+	background-image: url(../images/zf2.png);
+	display: inline-block;
+	margin-top: 7px;
+	width: 17px;
+	height: 14px;
+}
+.cachout_con div b span f{
+	background: url(../images/zf2.png) -560px -1880px;
+	margin: 0 5px;
+	margin-top: 10px;
+	display: inline-block;
+	width: 14px;
+	height: 10px;
+}
+.cachout_con div b span g{
+	display: inline-block;
+	margin-left: 5px;
+}
+
+/*cachlist*/
+.cachlist_tab{
+	width: 720px;
+	height: 53px;
+    background-color: #f8f8f8;
+    border-bottom: #e0e0e0 1px solid;
+    padding: 12px 12px 0;
+    margin-bottom: 20px;
+}
+.cachlist_tab span{
+	display: block; width: 82px; height: 41px; float: left; text-align: center; line-height: 41px; margin-right: 10px; border: 1px solid transparent; border-bottom: 0; color: #0a5ecc; cursor: pointer;
+}
+.cachlist_tab span:hover{
+	background: #efefef; color: #50a9f9;
+}
+.cachlist_tab span.hover{
+	border: #e0e0e0 1px solid;
+    border-bottom: 0;
+    background-color: #FFF;
+    color: #000;
+}
+.cachlist_tab_con1{
+	height: 26px;
+	margin-bottom: 10px;
+}
+.cachlist_tab_con1 span{
+	width: 88px;
+	height: 24px;
+	display: block;
+	float: left;
+    line-height: 25px;
+    margin: 5px;
+    background: #FFF;
+    border: #adb9c1 1px solid;
+    font-size: 14px;
+}
+.cachlist_tab_con1 span{
+	width: 88px;
+	height: 25px;
+	display: block;
+	float: left;
+    margin: 5px;
+    font-size: 14px;
+    border: none;
+    position: relative;
+}
+.cachlist_tab_con1 span input{
+	width: 88px;
+	height: 24px;
+	display: block;
+    line-height: 23px;
+    background: #FFF;
+    padding-left: 3px;
+    border: #adb9c1 1px solid;
+}
+.cachlist_tab_con1 span b{
+	width: 19px;
+    height: 24px;
+    display: block;
+    cursor: pointer;
+    background: url(../images/zf2.png) no-repeat 0 -210px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+}
+.cachlist_tab_con1 span none{
+	display: none;
+	width: 88px;
+	background: #FFF;
+    border: #adb9c1 1px solid;
+    border-top: none;
+    position: absolute;
+    top: 24px;
+    left: 0px;
+    padding: 3px 0;
+}
+.cachlist_tab_con1 span none a{
+	display: block;
+    line-height: 24px \9;
+    color: #393b3f;
+    border-top: #fff 1px solid;
+    border-bottom: #fff 1px solid;
+    overflow: hidden;
+    padding: 0 5px;
+}
+.cachlist_tab_con1 span none a:hover{
+	background-color: #c8def9;
+    color: #444;
+    border-top: #b0c8e2 1px solid;
+    border-bottom: #b0c8e2 1px solid;
+    text-decoration: none;
+}
+.cachlist_table1{
+	width: 720px;
+	height: 150px;
+}
+
+.cachlist_table1 table tr{
+	background: #f5f5f5;
+	height: 51px;
+}
+.cachlist_table1 table tr td{
+	vertical-align: top;
+}
+.cachlist_table1 table tr div{
+	line-height: 27px;
+}
+.cachlist_table1 table tr div i{
+	display: inline-block;
+	width: 16px;
+    height: 16px;
+    margin-left: 3px;
+    padding-top: 3px;
+    background: url(../images/zf2.png) no-repeat -530px -430px;
+}
+.cachlist_table1 table.cachlist_table2 tr div.zjq_table2{
+	float: left;
+	width: 350px;
+}
+table.cachlist_table2{
+	margin-top: 5px;
+}
+table.cachlist_table2 tr{
+	height: 28px;
+}
+.cachlist_btm{
+	width: 720px; height: 97px;
+}
+.cachlist_btm em{
+	display: block;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 25px;
+    background: url(../images/zf2.png) 0 -490px;
+}
+.cachlist_btm p{
+	text-align: center;
+	color: #b6b6b6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
