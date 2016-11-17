@@ -84,7 +84,9 @@ angular
 
 	}])
 	.config(['$stateProvider','$urlRouterProvider',function ($stateProvider,$urlRouterProvider){
-		$urlRouterProvider.when('','/index','/one')
+		$urlRouterProvider.when('','/index')
+		$urlRouterProvider.when('/about','/about/one')
+		$urlRouterProvider.when('/setting','/setting/base')
 			$stateProvider.state('index',{
 				url:'/index',
 				views:{
