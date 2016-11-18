@@ -1,0 +1,201 @@
+<div ng-controller="transaction-history">
+
+	<span class="commission_titleBar001 mb0">
+    	<span class="commission_txtPic myBitT011">
+        	<h3>股票历史记录</h3>
+        </span>
+    </span>
+    <div class="zf_jiaoyi">
+    	<ul>
+    		<li class="zf_hover"><a href=""><span>港股交易</span></a></li>
+    		<li><a href=""><span>美股交易</span></a></li>
+    		<li><a href=""><span>A股交易</span></a></li>
+    	</ul>
+    </div>
+    <!--第一块-->
+    <div class="zf_jiaoyi1" style="padding-left:0px;display:block;">
+    	<span class="zf_span">账户类型</span>
+    	<div class="zf_jiaoyi2">
+    		<span><input type="text" />
+    			<b></b>
+    			<none></none>
+    		</span>
+    	</div>
+    	<span class="zf_span1" style="display:block; float:left; margin-right:5px;">时间</span>
+    	<div class="zf_jiaoyi3">
+    		<span><input type="text" value="2016年" /><b></b><non><a>2012年</a><a>2013年</a><a>2014年</a><a>2015年</a><a>2016年</a></non></span>
+    	</div>
+    	<div class="zf_jiaoyi3">
+    		<span><input type="text" value="11月" /><b></b><non><a>1月</a><a>2月</a><a>3月</a><a>4月</a><a>5月</a><a>6月</a><a>7月</a><a>8月</a><a>9月</a><a>10月</a><a>11月</a><a>12月</a></non></span>
+    	</div>
+    	<div class="zf_jiaoyi3">
+    		<span><input type="text" value="全部" /><b></b><non><a>全部</a></non></span>
+    	</div>
+    </div>
+     <div class="zf_jiaoyi1" style="padding-left:0px;display:none;">
+    	<span class="zf_span">账户类型</span>
+    	<div class="zf_jiaoyi2">
+    		<span><input type="text" /><b></b><none></none></span>
+    	</div>
+    	<span class="zf_span1" style="display:block; float:left; margin-right:5px;">时间</span>
+    	<div class="zf_jiaoyi3">
+    		<span><input type="text" value="2016年" /><b></b><non><a>2012年</a><a>2013年</a><a>2014年</a><a>2015年</a><a>2016年</a></non></span>
+    	</div>
+    	<div class="zf_jiaoyi3">
+    		<span><input type="text" value="11月" /><b></b><non><a>1月</a><a>2月</a><a>3月</a><a>4月</a><a>5月</a><a>6月</a><a>7月</a><a>8月</a><a>9月</a><a>10月</a><a>11月</a><a>12月</a></non></span>
+    	</div>
+    	<div class="zf_jiaoyi3">
+    		<span><input type="text" value="全部" /><b></b><non><a>全部</a></non></span>
+    	</div>
+    </div>
+    <div class="zf_jiaoyi1" style="padding-left:0px;display:none;">
+    	<div class="zf_jiaoyi2" style="margin-left:20px;">
+    		<span><input type="text"  value="中山证劵" /><b></b><none></none></span>
+    	</div>
+    	
+    	<div class="zf_jiaoyi3">
+    		<span>
+    			<input type="text" value="2016年" />
+    			<b></b>
+    			<non>
+    				<a>2012年</a>
+    				<a>2013年</a>
+    				<a>2014年</a>
+    				<a>2015年</a>
+    				<a>2016年</a>
+    			</non>
+    		</span>
+    	</div>
+    
+    	<div class="zf_jiaoyi3">
+    		<span><input type="text" value="11月" />
+    			<b></b>
+    			<non>
+    				<a>1月</a>
+    				<a>2月</a>
+    				<a>3月</a>
+    				<a>4月</a>
+    				<a>5月</a>
+    				<a>6月</a>
+    				<a>7月</a>
+    				<a>8月</a>
+    				<a>9月</a>
+    				<a>10月</a>
+    				<a>11月</a>
+    				<a>12月</a>
+    			</non>
+    		</span>
+    	</div>
+    	
+    </div>
+     <div class="zf_jiaoyi zf_jiaoyiy">
+    	<span class="zf_ggty zf_hover1"><a href="">订单记录</a></span>
+    	<span class="zf_ggty"><a href="">成交记录</a></span>
+    </div>
+    <div class="zf_jiaoyix" style="display:block;">
+    	<div class="zf_jiaoyix1">
+			没有对应记录   
+		</div>
+    </div>
+    <div class="zf_jiaoyix" style="display:none;">
+    	<div class="zf_jiaoyix1">
+			没有对应记录
+		</div>
+    </div>
+
+
+<script>
+	var aa=true
+		$('.zf_jiaoyi2 span').eq(0).click(function(){
+			if(aa ==true ){
+				$('.zf_jiaoyi2 span none').css('display','block')
+				aa= false;
+				$('.zf_jiaoyi2 span none a').click(function(){
+					$('.zf_jiaoyi2 span input').val($(this).html())
+				})
+			}else{
+				$('.zf_jiaoyi2 span none').css('display','none')
+				aa = true
+			}
+			
+		})
+		$('.zf_jiaoyi2 span').eq(1).click(function(){
+			if(aa ==true ){
+				$('.zf_jiaoyi2 span none').css('display','block')
+				aa= false;
+				$('.zf_jiaoyi2 span none a').click(function(){
+					$('.zf_jiaoyi2 span input').val($(this).html())
+				})
+			}else{
+				$('.zf_jiaoyi2 span none').css('display','none')
+				aa = true
+			}
+			
+		})
+		$('.zf_jiaoyi2 span').eq(2).click(function(){
+			if(aa ==true ){
+				$('.zf_jiaoyi2 span none').css('display','block')
+				aa= false;
+				$('.zf_jiaoyi2 span none a').click(function(){
+					$('.zf_jiaoyi2 span input').val($(this).html())
+				})
+			}else{
+				$('.zf_jiaoyi2 span none').css('display','none')
+				aa = true
+			}
+			
+		})
+		$('.zf_jiaoyi3 span').eq(1).click(function(){
+			if(aa == true ){
+				$('.zf_jiaoyi3 span:eq(1) non').css('display','block')
+				aa = false;
+				$('.zf_jiaoyi3 span:eq(1) non a').click(function(){
+					$('.zf_jiaoyi3 span:eq(1) input').val($(this).html())
+				})
+			}else{
+				$('.zf_jiaoyi3 span:eq(1) non').css('display','none')
+				aa = true
+			}
+		})
+		$('.zf_jiaoyi3 span').eq(0).click(function(){
+			if(aa == true ){
+				$('.zf_jiaoyi3 span:eq(0) non').css('display','block')
+				aa = false;
+				$('.zf_jiaoyi3 span:eq(0) non a').click(function(){
+					$('.zf_jiaoyi3 span:eq(0) input').val($(this).html())
+				})
+			}else{
+				$('.zf_jiaoyi3 span:eq(0) non').css('display','none')
+				aa = true
+			}
+		})
+		$('.zf_jiaoyi3 span').eq(2).click(function(){
+			if(aa == true ){
+				$('.zf_jiaoyi3 span:eq(2) non').css('display','block')
+				aa = false;
+				$('.zf_jiaoyi3 span:eq(2) non a').click(function(){
+					$('.zf_jiaoyi3 span:eq(2) input').val($(this).html())
+				})
+			}else{
+				$('.zf_jiaoyi3 span:eq(2) non').css('display','none')
+				aa = true
+			}
+		})
+
+
+		$('.zf_jiaoyi ul li').click(function() {
+			var index=$(this).index()
+			$(this).addClass('zf_hover').siblings().removeClass('zf_hover')
+			$(".zf_jiaoyi1").css({"display":"none"});
+			$(".zf_jiaoyi1").eq(index).css({"display":"block"})
+		});
+		$('.zf_jiaoyiy span').click(function(){
+			var index=$(this).index()
+			$(this).addClass('zf_hover1').siblings().removeClass('zf_hover1')
+			$(".zf_jiaoyix").css({"display":"none"});
+			$(".zf_jiaoyix").eq(index).css({"display":"block"})
+		})
+	</script>
+
+
+</div>

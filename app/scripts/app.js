@@ -382,12 +382,12 @@ angular
 						controller:'buyquotation'
 					}
 				}
-			}).state('setting.history',{
-				url:'/history',
+			}).state('setting.transaction-history',{
+				url:'/transaction-history',
 				views:{
 					'bigger':{
-						templateUrl:'views/history.html',
-						controller:'history'
+						templateUrl:'views/transaction-history.html',
+						controller:'transaction-history'
 					}
 				}
 			}).state('setting.invite',{
