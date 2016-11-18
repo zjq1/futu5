@@ -992,6 +992,7 @@ table.cachlist_table2 tr {
 	position: absolute;
 	left: 50%; top: 50%; margin-left: -190px; margin-top: -93px;
 	width: 380px; height: 187px;
+	z-index: 50;
 }
 .zjq_tankuang p{
 	height: 34px;
